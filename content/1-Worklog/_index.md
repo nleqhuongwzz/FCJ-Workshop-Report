@@ -1,18 +1,14 @@
 ---
 title: "Worklog"
-date: 2024-01-01
+date: 2026-08-14
 weight: 1
 chapter: false
 pre: " <b> 1. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
-{{% /notice %}}
+This content documents the actual learning and working progress over the 8 weeks of participating in the AWS First Cloud AI Journey - FCAJ internship program. The worklog summarizes the entire journey from the early days of approaching the cloud platform to independently building, operating, and successfully completing a practical Serverless system.
 
-**On this page**, you will need to introduce your worklog. **How** did you complete it? How many weeks did you take to complete the program? **What** did you do in those weeks?
-
-This worklog was completed over 8 weeks, and the weekly contents are as follows:
+This worklog was completed in 8 weeks, with the content for each week as follows:
 
 **Week 1:** [Getting familiar with AWS and basic AWS services](1.1-Week1/)
 
@@ -28,4 +24,4 @@ This worklog was completed over 8 weeks, and the weekly contents are as follows:
 
 **Week 7:** [Implementing CI/CD, WAF, Secrets Manager, and S3 image upload](1.7-Week7/)
 
-**Week 8:** [Testing, Final documentation, presentation, and cleanup](1.8-Week8/)
+**Week 8:** [Testing, Final documentation, and cleanup](1.8-Week8/)
