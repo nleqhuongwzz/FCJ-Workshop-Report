@@ -1,57 +1,28 @@
 ---
 title: "Week 3 Worklog"
-date: 2024-01-01
-weight: 1
+date: 2026-07-17
+weight: 3
 chapter: false
 pre: " <b> 1.3. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
-
 
 ### Week 3 Objectives:
-
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Deep dive into advanced access management with IAM (Users, Groups, Roles, and Policies).
+* Practice provisioning and managing EC2 virtual servers with basic security configurations via Security Groups.
+* Explore object storage solutions and deploy a simple static website using Amazon S3.
 
 ### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Day | Task Details | Start Date | Completion Date | Reference Material |
+| :--- | :--- | :--- | :--- | :--- |
+| 1 | - Researched IAM Policies, User Groups, and IAM Roles. <br> - Learned how to secure access permissions following the Principle of Least Privilege. | 05/07/2026 | 05/07/2026 | AWS IAM Documentation |
+| 2 | - **Practice:** <br>&emsp; + Provisioned an EC2 Linux instance (`t2.micro`). <br>&emsp; + Configured Security Groups to open basic access ports (SSH, HTTP). | 06/07/2026 | 06/07/2026 | AWS Documentation |
+| 3 | - Connected to the EC2 instance via SSH directly from the terminal. <br> - Executed basic Linux commands to inspect system status. | 07/07/2026 | 07/07/2026 | AWS EC2 Documentation |
+| 4 | - Created an S3 Bucket and explored management features such as Versioning and Block Public Access configurations. | 08/07/2026 | 08/07/2026 | AWS S3 Documentation |
+| 5 | - Uploaded HTML/CSS files to S3 to host a simple static website. <br> - Verified connection and accessed the website via the S3 endpoint URL. | 09/07/2026 | 09/07/2026 | AWS S3 Guide |
 
 ### Week 3 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* **IAM Permission Mastery:** Gained a solid understanding of how to use IAM Policies, User Groups, and Roles to securely manage and restrict access to resources.
+* **EC2 Virtual Server Proficiency:** Successfully provisioned and securely connected to a remote EC2 instance, understanding how Security Groups act as virtual firewalls to protect the system.
+* **S3 Storage Ownership:** Mastered fundamentals of object storage and successfully transformed a standard S3 bucket into a live, globally accessible static website.
