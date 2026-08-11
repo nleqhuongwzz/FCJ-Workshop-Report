@@ -1,47 +1,30 @@
 ---
-title: "Sharing and Feedback"
-date: 2024-01-01
+title: "Sharing & Feedback"
+date: 2026-08-11
 weight: 7
 chapter: false
 pre: " <b> 7. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
-{{% /notice %}}
+Below are my personal shares, feelings, and feedback regarding my practical experiences throughout the **AWS First Cloud AI Journey - FCAJ** internship program:
 
-> Here, you can freely share your personal opinions about your experience participating in the First Cloud AI Journey program. This will help the FCAJ team improve any shortcomings based on the following aspects:
+### 1. General Program Overview
 
-### Overall Evaluation
+* **Working Environment & Format:** The program provides a very professional, open, and flexible online learning and working environment. The organizing committee and operations team are always ready to support and promptly address any concerns from interns. A well-maintained sense of connection helped me easily stay focused on completing my objectives.
+* **Support from Mentors and Management:** The mentoring team is extremely enthusiastic, dedicated, and rich in practical experience. Mentors always guide and pose open-ended questions so that I can think independently, explore, and resolve issues with my own hands. The program's admin team also provides excellent support regarding documentation, systems, and necessary procedures.
+* **Relevance to Major:** The program content and practical exercises/projects closely align with my Information Technology major. The program expands into many modern technology domains that I had not previously encountered, such as Serverless architecture and Amazon Web Services (AWS) cloud computing.
+* **Learning & Skill Development Opportunities:** The internship has equipped me with a massive amount of specialized knowledge in Cloud Computing, alongside vital soft skills such as problem-solving thinking, time management, and software engineer-standard working etiquette.
+* **Community Spirit & Companionship:** The community participating in the program is dynamic and cohesive. Everyone is always willing to share materials, engage in active discussions, and help each other overcome difficult challenges throughout the weeks of studying and project execution.
+* **Scientific Structure of the Training Roadmap:** The 8-week learning and project roadmap is designed with extreme clarity, progressing from foundational services to building a complete system, helping me effectively manage my workload.
 
-**1. Working Environment**  
-The working environment is very friendly and open. FCAJ members are always willing to help whenever I encounter difficulties, even outside working hours. The workspace is tidy and comfortable, helping me focus better. However, I think it would be nice to have more social gatherings or team bonding activities to strengthen relationships.
+### 2. Deep Impressions & Evaluation
 
-**2. Support from Mentor / Team Admin**  
-The mentor provides very detailed guidance, explains clearly when I don’t understand, and always encourages me to ask questions. The admin team supports administrative tasks, provides necessary documents, and creates favorable conditions for me to work effectively. I especially appreciate that the mentor allows me to try and solve problems myself instead of just giving the answer.
+* **Most Rewarding Experience:** Independently designing and deploying a real-world Serverless system from scratch under the guidance of mentors is the most valuable outcome. Mastering AWS services and successfully applying them to the EDMS project has given me a practical perspective and a significant boost in confidence.
+* **Perspective for Future Improvements:** The program could incorporate additional quick-reference documentation or brief discussion sessions on troubleshooting common AWS errors, helping future interns save time during their initial weeks.
+* **Practical Value of the Program:** This is a high-quality internship program tailored for Information Technology students seeking early exposure to practical cloud technologies, training in end-to-end product development thinking, and the completion of practical projects for their portfolios.
 
-**3. Relevance of Work to Academic Major**  
-The tasks I was assigned align well with the knowledge I learned at university, while also introducing me to new areas I had never encountered before. This allowed me to both strengthen my foundational knowledge and gain practical skills.
+### 3. Proposals & Future Direction
 
-**4. Learning & Skill Development Opportunities**  
-During the internship, I learned many new skills such as using project management tools, teamwork skills, and professional communication in a corporate environment. The mentor also shared valuable real-world experiences that helped me better plan my career path.
-
-**5. Company Culture & Team Spirit**  
-The company culture is very positive: everyone respects each other, works seriously but still keeps things enjoyable. When there are urgent projects, everyone works together and supports one another regardless of their position. This made me feel like a real part of the team, even as an intern.
-
-**6. Internship Policies / Benefits**  
-The company provides an internship allowance and offers flexible working hours when needed. In addition, having the opportunity to join internal training sessions is a big plus.
-
----
-
-### Additional Questions
-- What did you find **most satisfying** during your internship?  
-- What do you think the company **should improve** for future interns?  
-- If recommending to a friend, would you **suggest they intern here**? Why or why not?  
-
----
-
-### Suggestions & Expectations
-- Do you have any suggestions to improve the internship experience?  
-- Would you like to continue this program in the future?  
-- Any other comments (free sharing):
+* **Content Improvement:** I propose that the program continues to develop and expand into more advanced topics regarding AI/ML integration on cloud platforms in upcoming phases.
+* **Future Companionship:** I am fully prepared to continue accompanying, supporting, or participating in the program's community-connecting activities in the future.
+* **Acknowledgement:** I would like to send my sincere gratitude to the FCAJ organizing committee and the mentors who have dedicatedly supported and accompanied me throughout this 8-week internship journey.
