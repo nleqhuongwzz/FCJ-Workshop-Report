@@ -1,59 +1,28 @@
 ---
 title: "Worklog Tuần 3"
-date: 2024-01-01
-weight: 1
+date: 2026-07-17
+weight: 3
 chapter: false
 pre: " <b> 1.3. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
 
 ### Mục tiêu tuần 3:
-
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Tìm hiểu sâu hơn về quản lý truy cập nâng cao với IAM (Users, Groups, Roles và Policies).
+* Thực hành khởi tạo và quản lý máy chủ ảo EC2 với các cấu hình bảo mật cơ bản qua Security Groups.
+* Khám phá giải pháp lưu trữ đối tượng và triển khai trang web tĩnh đơn giản bằng Amazon S3.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Ngày | Công việc chi tiết | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| :--- | :--- | :--- | :--- | :--- |
+| 1 | - Nghiên cứu lý thuyết về IAM Policies, User Groups và IAM Roles. <br> - Tìm hiểu cách phân quyền truy cập an toàn theo nguyên tắc tối thiểu. | 05/07/2026 | 05/07/2026 | AWS IAM Documentation |
+| 2 | - Thực hành khởi tạo máy chủ EC2 Linux (t2.micro). <br> - Cấu hình Security Groups mở các cổng truy cập cơ bản (SSH, HTTP). | 06/07/2026 | 06/07/2026 | AWS Documentation |
+| 3 | - Kết nối vào máy chủ EC2 thông qua SSH trực tiếp từ terminal. <br> - Thực thi một số lệnh Linux cơ bản để kiểm tra hệ thống. | 07/07/2026 | 07/07/2026 | AWS EC2 Documentation |
+| 4 | - Tạo S3 Bucket và tìm hiểu các tính năng quản lý như Versioning và cấu hình Block Public Access. | 08/07/2026 | 08/07/2026 | AWS S3 Documentation |
+| 5 | - Tải các file HTML/CSS lên S3 để cấu hình chạy một trang web tĩnh đơn giản. <br> - Kiểm tra kết nối và truy cập trang web thông qua S3 endpoint URL. | 09/07/2026 | 09/07/2026 | AWS S3 Guide |
 
 ### Kết quả đạt được tuần 3:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* **Nắm vững quản lý quyền IAM:** Hiểu rõ cách sử dụng IAM Policies, Nhóm người dùng và Vai trò để phân quyền truy cập tài nguyên một cách an toàn.
+* **Thành thạo máy chủ ảo EC2:** Khởi tạo và kết nối bảo mật thành công vào máy chủ EC2 từ xa, hiểu cách hoạt động của Security Groups như một bức tường lửa ảo bảo vệ hệ thống.
+* **Làm chủ lưu trữ S3:** Nắm vững kiến thức cơ bản về lưu trữ đối tượng và chuyển đổi thành công một S3 bucket thành trang web tĩnh hoạt động trực tuyến.
