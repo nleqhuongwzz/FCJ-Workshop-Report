@@ -1,57 +1,26 @@
 ---
 title: "Week 4 Worklog"
-date: 2024-01-01
-weight: 1
+date: 2026-07-24
+weight: 4
 chapter: false
 pre: " <b> 1.4. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
-
 
 ### Week 4 Objectives:
-
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Research, analyze, and select a practical project topic to comprehensively apply foundational AWS knowledge accumulated from previous weeks.
+* Build and design an initial Serverless architecture while thoroughly researching to accurately identify the core services and technologies constituting the system.
 
 ### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Day | Task Details | Start Date | Completion Date |
+| :--- | :--- | :--- | :--- |
+| **1** | **Project Brainstorming**<br>- Thoroughly surveyed technology trends and explored real-world enterprise cloud computing use cases.<br>- Detailed discussions, feasibility assessments, and final decision to build an Electronic Document Management System (EDMS) using a modern Serverless model. | 12/07/2026 | 12/07/2026 |
+| **2** | **Technology Stack Selection**<br>- Comprehensively evaluated and selected the optimal AWS services for the EDMS backend: Amazon API Gateway, AWS Lambda, and Amazon S3.<br>- Researched the integration of Amazon Aurora Serverless to ensure flexible, auto-scaling management and storage of relational metadata. | 13/07/2026 | 13/07/2026 |
+| **3** | **Architecture Design**<br>- Drafted the high-level system architecture diagram, clearly illustrating communication tiers and seamless connections among the chosen AWS services.<br>- Established a detailed plan, outlining timelines, workloads, and specific roadmaps for the upcoming development weeks. | 14/07/2026 | 14/07/2026 |
+| **4** | **Event-Driven Workflow Research**<br>- Researched event-driven integration flows between S3 file uploads, Lambda triggers, and database logging.<br>- Defined security and authentication methods for API Gateway endpoints. | 15/07/2026 | 15/07/2026 |
+| **5** | **Roadmap Finalization & Review**<br>- Finalized system design documentation and assigned individual responsibilities for project phases.<br>- Prepared presentation materials and technical documents for the architecture review meeting. | 16/07/2026 | 16/07/2026 |
 
 ### Week 4 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* **Project Orientation:** Successfully selected the Electronic Document Management System (EDMS) topic and established a detailed deployment plan, laying a solid foundation for the product implementation phase.
+* **Architecture Blueprint:** Successfully created a foundational architecture blueprint leveraging optimal Serverless technologies, ensuring high scalability, automated operations, and maximum cost-efficiency.
