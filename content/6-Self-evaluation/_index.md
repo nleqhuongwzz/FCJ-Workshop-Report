@@ -8,7 +8,7 @@ pre: " <b> 6. </b> "
 
 Throughout the **AWS First Cloud AI Journey - FCAJ** internship program from **June 2026** to **August 2026**, I had the opportunity to learn, practice, and apply my Information Technology major knowledge to build real-world systems on cloud computing platforms.
 
-I participated in researching and developing a Serverless Electronic Document Management System (EDMS), through which I significantly improved my skills in cloud architecture design, Java backend programming, CI/CD automation deployment, and database management.
+I participated in researching and developing a Serverless Electronic Document Management System (EDMS) on AWS, through which I significantly improved my skills in AWS cloud architecture design, Serverless service deployment, AWS CI/CD automation, and cloud-based database management.
 
 Regarding work ethic, I consistently strived to complete assigned tasks effectively, proactively explored technical solutions, and strictly adhered to project milestones.
 
