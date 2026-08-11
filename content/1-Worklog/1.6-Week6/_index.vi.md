@@ -1,58 +1,27 @@
 ---
 title: "Worklog Tuần 6"
-date: 2024-01-01
-weight: 1
+date: 2026-08-07
+weight: 6
 chapter: false
 pre: " <b> 1.6. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
 
 ### Mục tiêu tuần 6:
-
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Tiếp tục phát triển và hoàn thiện các module nghiệp vụ nâng cao của hệ thống.
+* Tự động hóa quy trình phê duyệt tài liệu bằng AWS Step Functions kết hợp Amazon SNS gửi email thông báo.
+* Đóng gói và triển khai toàn bộ backend Serverless bằng mã nguồn cơ sở hạ tầng (AWS SAM).
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Ngày | Công việc chi tiết | Ngày bắt đầu | Ngày hoàn thành |
+| :--- | :--- | :--- | :--- |
+| **1** | **Phát triển Module & Quy trình Phê duyệt (Step Functions)**<br>- Mở rộng và phát triển các module chức năng phụ trợ cho hệ thống EDMS.<br>- Xây dựng State Machine trên AWS Step Functions để điều phối luồng phê duyệt tài liệu nghiêm ngặt. | 27/07/2026 | 27/07/2026 |
+| **2** | **Thông báo Sự kiện (Amazon SNS)**<br>- Tích hợp Amazon SNS để kích hoạt gửi email tự động khi tài liệu được duyệt hoặc được chia sẻ. | 28/07/2026 | 28/07/2026 |
+| **3** | **Chia sẻ Tài liệu An toàn & Quản lý Vòng đời**<br>- Lập trình chức năng chia sẻ có kiểm soát, tạo ra các đường link Pre-signed URL có giới hạn thời gian.<br>- Triển khai cơ chế Soft Delete, đưa tài liệu vào trạng thái Thùng rác và cho phép khôi phục trong 30 ngày. | 29/07/2026 | 30/07/2026 |
+| **4** | **Tự động Xóa vĩnh viễn (Hard Delete)**<br>- Cấu hình thuộc tính TTL trên DynamoDB để hệ thống tự động xóa vĩnh viễn các tài liệu quá hạn mà không cần can thiệp thủ công. | 31/07/2026 | 31/07/2026 |
+| **5** | **Hạ tầng bằng Code & Triển khai Đám mây (AWS SAM)**<br>- Viết file `template.yaml` bằng AWS SAM để khai báo toàn bộ Lambda, API Gateway và DynamoDB.<br>- Thực thi lệnh build và deploy của SAM để tự động khởi tạo toàn bộ kiến trúc EDMS lên AWS Cloud. | 01/08/2026 | 02/08/2026 |
 
 ### Kết quả đạt được tuần 6:
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* **Mở rộng Module & Tự động hóa Nghiệp vụ:** Hoàn thiện các module chức năng mở rộng, điều phối thành công các quy trình doanh nghiệp phức tạp thông qua Step Functions và SNS giúp người dùng nhận thông báo tức thì.
+* **Triển khai Tối ưu:** Thay thế thao tác thủ công trên giao diện bằng AWS SAM. Toàn bộ dự án giờ đây có thể được khởi tạo hoặc gỡ bỏ chỉ trong vài phút bằng code, giảm thiểu tối đa chi phí vận hành và dọn dẹp hệ thống.
