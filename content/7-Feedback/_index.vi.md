@@ -1,44 +1,32 @@
 ---
 title: "Chia sẻ, đóng góp ý kiến"
-date: 2024-01-01
+date: 2026-08-11
 weight: 7
 chapter: false
 pre: " <b> 7. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
->Tại đây bạn có thể tự do đóng góp ý kiến cá nhân về những trải nghiệm khi tham gia chương trình First Cloud AI Journey, giúp team FCAJ cải thiện những vấn đề còn thiếu sót dựa trên các hạng mục sau:
+Dưới đây là những chia sẻ, cảm nhận và đóng góp ý kiến cá nhân của tôi về những trải nghiệm thực tế trong suốt quá trình tham gia chương trình thực tập **AWS First Cloud AI Journey - FCAJ**:
 
-### Đánh giá chung
+### 1. Đánh giá tổng quan về chương trình
 
-**1. Môi trường làm việc**  
-Môi trường làm việc rất thân thiện và cởi mở. Các thành viên trong FCAJ luôn sẵn sàng hỗ trợ khi mình gặp khó khăn, kể cả ngoài giờ làm việc. Không gian làm việc gọn gàng, thoải mái, giúp mình tập trung tốt hơn. Tuy nhiên, mình nghĩ có thể bổ sung thêm một số buổi giao lưu hoặc team bonding để mọi người hiểu nhau hơn.
-
-**2. Sự hỗ trợ của mentor / team admin**  
-Mentor hướng dẫn rất chi tiết, giải thích rõ ràng khi mình chưa hiểu và luôn khuyến khích mình đặt câu hỏi. Team admin hỗ trợ các thủ tục, tài liệu và tạo điều kiện để mình làm việc thuận lợi. Mình đánh giá cao việc mentor cho phép mình thử và tự xử lý vấn đề thay vì chỉ đưa đáp án.
-
-**3. Sự phù hợp giữa công việc và chuyên ngành học**  
-Công việc mình được giao phù hợp với kiến thức mình đã học ở trường, đồng thời mở rộng thêm những mảng mới mà mình chưa từng được tiếp cận. Nhờ vậy, mình vừa củng cố kiến thức nền tảng, vừa học thêm kỹ năng thực tế.
-
-**4. Cơ hội học hỏi & phát triển kỹ năng**  
-Trong quá trình thực tập, mình học được nhiều kỹ năng mới như sử dụng công cụ quản lý dự án, kỹ năng làm việc nhóm, và cả cách giao tiếp chuyên nghiệp trong môi trường công ty. Mentor cũng chia sẻ nhiều kinh nghiệm thực tế giúp mình định hướng tốt hơn cho sự nghiệp.
-
-**5. Văn hóa & tinh thần đồng đội**  
-Văn hóa công ty rất tích cực: mọi người tôn trọng lẫn nhau, làm việc nghiêm túc nhưng vẫn vui vẻ. Khi có dự án gấp, mọi người cùng nhau cố gắng, hỗ trợ không phân biệt vị trí. Điều này giúp mình cảm thấy mình là một phần của tập thể, dù chỉ là thực tập sinh.
-
-**6. Chính sách / phúc lợi cho thực tập sinh**  
-Công ty có hỗ trợ phụ cấp thực tập và tạo điều kiện về thời gian linh hoạt khi cần thiết. Ngoài ra, việc được tham gia các buổi đào tạo nội bộ là một điểm cộng lớn.
+* **Môi trường và hình thức làm việc:** Chương trình mang lại môi trường học tập và làm việc trực tuyến rất chuyên nghiệp, cởi mở và linh hoạt. Ban tổ chức cùng đội ngũ vận hành luôn sẵn sàng hỗ trợ, giải đáp mọi vướng mắc của thực tập sinh một cách nhanh chóng. Tinh thần kết nối được duy trì tốt giúp tôi dễ dàng tập trung hoàn thành các mục tiêu đề ra.
+* **Sự hỗ trợ từ Mentor và Ban quản lý:** Các mentor hướng dẫn cực kỳ nhiệt tình, tận tâm và giàu kinh nghiệm thực tế. Mentor luôn định hướng, đặt vấn đề gợi mở để tôi tự tư duy, tìm tòi và tự tay xử lý vấn đề. Đội ngũ admin chương trình cũng hỗ trợ rất tốt về mặt tài liệu, hệ thống và các thủ tục cần thiết.
+* **Mức độ phù hợp với chuyên ngành:** Nội dung chương trình và các bài tập/đồ án thực tế rất bám sát với kiến thức chuyên ngành Công nghệ thông tin. Chương trình mở rộng thêm nhiều mảng công nghệ hiện đại chưa từng tiếp cận như kiến trúc Serverless, điện toán đám mây AWS.
+* **Cơ hội học hỏi và phát triển kỹ năng:** Quá trình thực tập đã trang bị cho tôi khối lượng kiến thức chuyên môn lớn về Cloud Computing, cùng với đó là các kỹ năng mềm quan trọng như tư duy giải quyết vấn đề, quản lý thời gian và tác phong làm việc chuẩn kỹ sư phần mềm.
+* **Tinh thần cộng đồng và sự đồng hành:** Cộng đồng tham gia chương trình rất năng động và đoàn kết. Mọi người luôn sẵn sàng chia sẻ tài liệu, thảo luận sôi nổi và giúp đỡ lẫn nhau vượt qua các thử thách khó khăn trong suốt các tuần học tập và làm dự án.
+* **Tính khoa học trong lộ trình đào tạo:** Lộ trình học tập và làm dự án qua 8 tuần được thiết kế rất rõ ràng, đi từ các dịch vụ cơ bản đến việc xây dựng một hệ thống hoàn chỉnh, giúp tôi làm chủ khối lượng công việc một cách hiệu quả.
 
 
-### Một số câu hỏi khác
-- Điều bạn **hài lòng nhất** trong thời gian thực tập?  
-- Điều bạn nghĩ công ty **cần cải thiện** cho các thực tập sinh sau?  
-- Nếu giới thiệu cho bạn bè, bạn có **khuyên họ thực tập ở đây không**? Vì sao?  
+### 2. Cảm nhận và Đánh giá chiều sâu
+
+* **Trải nghiệm tâm đắc nhất:** Việc tự tay thiết kế và triển khai một hệ thống Serverless thực tế từ con số không dưới sự hướng dẫn của các mentor là kết quả giá trị nhất. Làm chủ các dịch vụ AWS và áp dụng thành công vào đồ án EDMS đã cho tôi góc nhìn thực tiễn và tự tin hơn rất nhiều.
+* **Góc nhìn cải thiện cho các khóa sau:** Chương trình có thể bổ sung thêm một số tài liệu hướng dẫn nhanh hoặc các buổi thảo luận ngắn về việc xử lý các lỗi thường gặp (troubleshooting) trên AWS, giúp các bạn thực tập sinh khóa sau tiết kiệm thời gian hơn ở những tuần đầu tiên.
+* **Giá trị thực tế của chương trình:** Đây là chương trình thực tập chất lượng cao dành cho sinh viên Công nghệ thông tin muốn tiếp cận sớm với công nghệ đám mây thực tế, rèn luyện tư duy làm sản phẩm từ đầu đến cuối và hoàn thiện dự án thực chiến cho hồ sơ cá nhân.
 
 
-### Đề xuất & mong muốn
-- Bạn có đề xuất gì để cải thiện trải nghiệm trong kỳ thực tập?  
-- Bạn có muốn tiếp tục chương trình này trong tương lai?
-- Góp ý khác (tự do chia sẻ):
+### 3. Đề xuất & Định hướng tương lai
+
+* **Cải tiến nội dung:** Đề xuất chương trình tiếp tục phát triển và mở rộng thêm các chủ đề chuyên sâu về tích hợp AI/ML trên nền tảng đám mây trong các giai đoạn tiếp theo.
+* **Định hướng đồng hành:** Sẵn sàng tiếp tục đồng hành, hỗ trợ hoặc tham gia các hoạt động kết nối cộng đồng của chương trình trong tương lai.
+* **Lời cảm ơn:** Xin gửi lời cảm ơn chân thành đến Ban tổ chức chương trình FCAJ và các anh chị mentor đã tận tình hỗ trợ, đồng hành cùng tôi trong suốt 8 tuần thực tập vừa qua.
