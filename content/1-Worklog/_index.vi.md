@@ -6,12 +6,7 @@ chapter: false
 pre: " <b> 1. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
-**Trong trang này** bạn sẽ cần giới thiệu worklog của bạn **như thế nào**? Bạn hoàn thành chương trình trong vòng **bao nhiêu tuần**? Bạn **đã làm gì** trong các tuần đó?
-
+Nội dung này ghi chép lại tiến độ học tập và làm việc thực tế trong 8 tuần tham gia chương trình thực tập AWS First Cloud AI Journey - FCAJ. Nhật ký công việc tóm tắt toàn bộ lộ trình từ những ngày đầu tiếp cận nền tảng đám mây cho đến khi tự tay xây dựng, vận hành và nghiệm thu hoàn chỉnh một hệ thống Serverless thực tế.
 
 Worklog này được hoàn thành trong 8 tuần, và nội dung từng tuần như sau:
 
@@ -29,4 +24,4 @@ Worklog này được hoàn thành trong 8 tuần, và nội dung từng tuần 
 
 **Tuần 7:** [Triển khai CI/CD, WAF, Secrets Manager và upload ảnh lên S3](1.7-Week7/)
 
-**Tuần 8:** [Kiểm thử, hoàn thiện tài liệu, thuyết trình và dọn dẹp hạ tầng](1.8-Week8/)
+**Tuần 8:** [Kiểm thử, hoàn thiện tài liệu, và dọn dẹp hạ tầng](1.8-Week8/)
