@@ -1,59 +1,28 @@
 ---
 title: "Worklog Tuần 7"
-date: 2024-01-01
-weight: 1
+date: 2026-08-14
+weight: 7
 chapter: false
 pre: " <b> 1.7. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
 
 ### Mục tiêu tuần 7:
-
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Thiết lập luồng triển khai CI/CD tự động hóa toàn bộ bằng GitHub Actions.
+* Triển khai tính năng tải ảnh lên S3 và lưu thông tin vào cơ sở dữ liệu Aurora.
+* Triển khai các lớp bảo mật nâng cao (AWS WAF, Secrets Manager) và rà soát chính sách phân quyền IAM.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Ngày | Công việc chi tiết | Ngày bắt đầu | Ngày hoàn thành |
+| :--- | :--- | :--- | :--- |
+| **1** | **Thiết lập Luồng CI/CD (GitHub Actions)**<br>- Cấu hình quy trình tự động hóa kiểm thử và triển khai hạ tầng khi có mã nguồn mới được hợp nhất. | 03/08/2026 | 04/08/2026 |
+| **2** | **Bảo mật CSDL (Secrets Manager)**<br>- Tích hợp AWS Secrets Manager để lưu trữ an toàn và tự động xoay vòng mật khẩu của cơ sở dữ liệu Aurora. | 05/08/2026 | 05/08/2026 |
+| **3** | **Bảo vệ Tầng biên (AWS WAF) & Rà soát IAM**<br>- Cấu hình tường lửa AWS WAF để chặn bot spam và áp dụng giới hạn tần suất gọi API.<br>- Tiến hành rà soát toàn bộ AWS IAM Policies, đảm bảo nguyên tắc Quyền tối thiểu. | 06/08/2026 | 07/08/2026 |
+| **4** | **Triển khai Tải ảnh lên S3 & Lưu Aurora**<br>- Phát triển API xử lý việc tải ảnh lên Amazon S3.<br>- Cấu hình Lambda để ghi nhận metadata và đường dẫn tệp tin vào cơ sở dữ liệu Aurora Serverless. | 08/08/2026 | 08/08/2026 |
+| **5** | **Kiểm thử Tổng thể & Đánh giá**<br>- Thực hiện kiểm thử toàn bộ hệ thống, rà soát log lỗi trên CloudWatch và hoàn thiện báo cáo tuần. | 09/08/2026 | 09/08/2026 |
 
 ### Kết quả đạt được tuần 7:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* **Tự động hóa Quy trình:** Xây dựng thành công hệ thống CI/CD giúp tự động hóa quá trình build và deploy, tối ưu hóa thời gian phát triển và vận hành.
+* **Hoàn thiện Chức năng Lưu trữ:** Triển khai thành công luồng xử lý tải ảnh lên S3 kết hợp lưu trữ siêu dữ liệu an toàn vào cơ sở dữ liệu Aurora.
+* **Bảo mật Doanh nghiệp:** Củng cố toàn diện lớp bảo mật cho hệ thống với AWS Secrets Manager quản lý thông tin nhạy cảm và AWS WAF bảo vệ ứng dụng khỏi lưu lượng độc hại.
