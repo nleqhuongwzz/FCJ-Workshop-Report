@@ -9,7 +9,7 @@ pre: " <b> 6. </b> "
 
 Trong suốt thời gian tham gia chương trình thực tập **AWS First Cloud AI Journey - FCAJ** từ **tháng 06/2026** đến **tháng 08/2026**, tôi đã có cơ hội học hỏi, rèn luyện và áp dụng kiến thức chuyên ngành Công nghệ thông tin vào quá trình xây dựng hệ thống thực tế trên nền tảng điện toán đám mây. 
 
-Tôi đã tham gia nghiên cứu và phát triển hệ thống quản lý tài liệu điện tử (EDMS) theo kiến trúc Serverless, qua đó cải thiện mạnh mẽ các kỹ năng về thiết kế kiến trúc đám mây, lập trình backend Java, triển khai tự động hóa CI/CD và quản trị cơ sở dữ liệu.
+Tôi đã tham gia nghiên cứu và phát triển hệ thống quản lý tài liệu điện tử (EDMS) theo kiến trúc Serverless trên AWS, qua đó cải thiện mạnh mẽ các kỹ năng về thiết kế kiến trúc đám mây AWS, triển khai các dịch vụ Serverless, xây dựng luồng tự động hóa CI/CD trên AWS và quản trị các dịch vụ cơ sở dữ liệu trên nền tảng đám mây AWS.
 
 Về tác phong, tôi luôn cố gắng hoàn thành tốt các nhiệm vụ được giao, chủ động tìm tòi giải pháp kỹ thuật, và tuân thủ chặt chẽ các mốc thời gian hoàn thành dự án.
 
