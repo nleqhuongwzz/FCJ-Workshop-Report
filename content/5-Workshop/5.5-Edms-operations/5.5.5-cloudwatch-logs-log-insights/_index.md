@@ -15,7 +15,7 @@ Every Lambda function writes its output to **CloudWatch Logs**. You can inspect 
 3. Open the latest **log stream** (each stream corresponds to an execution environment).
 4. Read the log events to see the function output, timestamps, and any messages printed by your code.
 
-![Figure 48. Log groups](/images/5-Workshop/5.5-Edms-operations/log-groups.png)
+![Figure 48. Log groups](../../../images/5-Workshop/5.5-Edms-operations/log-groups.png)
 
 > **Note:** Logs are retained indefinitely by default. You can set a **retention period** in **Log groups** → **Actions** → **Edit retention** to control storage cost.
 

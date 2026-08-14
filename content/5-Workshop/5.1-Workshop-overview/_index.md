@@ -20,7 +20,7 @@ The system has three account roles:
 
 The following diagram shows the architecture of the platform we will build:
 
-![EDMS Architecture](../../../images/5-Workshop/5.1-Workshop-overview/architecture.png)
+![EDMS Architecture](../../images/5-Workshop/5.1-Workshop-overview/architecture.png)
 
 The system is composed of the following services:
 

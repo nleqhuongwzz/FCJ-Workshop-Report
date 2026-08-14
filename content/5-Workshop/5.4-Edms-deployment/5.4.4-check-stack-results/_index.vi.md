@@ -13,7 +13,7 @@ Sau khi stack được tạo, xác minh các tài nguyên tồn tại và lấy 
 1. Mở **CloudFormation console** → **Stacks**.
 2. Tìm `edms-iam-stack` và xác nhận **Status** của nó là **CREATE_COMPLETE**.
 
-![Figure 17. Stack hoàn tất](/images/5-Workshop/5.4-Edms-deployment/stack-complete.png)
+![Figure 17. Stack hoàn tất](../../../../images/5-Workshop/5.4-Edms-deployment/stack-complete.png)
 
 3. Nếu status là **CREATE_FAILED** hoặc **ROLLBACK_COMPLETE**, bấm **Events** để xem lỗi (thường là vấn đề ThumbprintList hoặc xác nhận IAM), sửa lại, rồi tạo lại stack.
 

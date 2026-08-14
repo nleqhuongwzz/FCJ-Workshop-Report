@@ -13,7 +13,7 @@ Sau khi push code và cấu hình workflow, hãy xác minh pipeline chạy và d
 1. Trong repository của bạn, mở tab **Actions**.
 2. Bạn sẽ thấy workflow `EDMS CI/CD`. Nếu có run, bấm vào run gần nhất.
 
-![Figure 25. Workflow runs](/images/5-Workshop/5.4-Edms-deployment/workflow-runs.png)
+![Figure 25. Workflow runs](../../../../images/5-Workshop/5.4-Edms-deployment/workflow-runs.png)
 
 > **Ghi chú:** Nếu không có run nào, hãy chắc chắn file `deploy.yml` đã được commit và push lên `main`. Workflow chỉ kích hoạt trên push vào nhánh đó (5.4.2).
 

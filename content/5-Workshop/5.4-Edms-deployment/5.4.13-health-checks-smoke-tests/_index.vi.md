@@ -43,7 +43,7 @@ Giờ test toàn bộ điều phối serverless (Step Functions + SNS):
 4. Xác nhận tài liệu trở thành `APPROVED`.
 5. Kiểm tra hộp thư để nhận **email SNS** `EDMS - Approval`.
 
-![Figure 37. Smoke test phê duyệt](/images/5-Workshop/5.4-Edms-deployment/approval-test.png)
+![Figure 37. Smoke test phê duyệt](../../../../images/5-Workshop/5.4-Edms-deployment/approval-test.png)
 
 ### 5.4.13.4 Kiểm tra Step Functions execution
 
@@ -51,6 +51,6 @@ Giờ test toàn bộ điều phối serverless (Step Functions + SNS):
 2. Bạn sẽ thấy một execution **SUCCEEDED** cho tài liệu đã duyệt.
 3. Mở nó và xác minh các state đã đi qua: `CaptureToken` → `Decision` → `MarkApproved` → `NotifyApproved`.
 
-![Figure 38. Execution thành công](/images/5-Workshop/5.4-Edms-deployment/execution-succeeded.png)
+![Figure 38. Execution thành công](../../../../images/5-Workshop/5.4-Edms-deployment/execution-succeeded.png)
 
 > **Ghi chú:** Định nghĩa ASL đầy đủ nằm trong repository (`backend/template.yaml`, resource `DocumentApprovalStateMachine`). Nó dùng `waitForTaskToken` để workflow có thể tạm dừng chờ quyết định của manager, rồi tiếp tục qua `SendTaskSuccess`.

@@ -46,6 +46,6 @@ By default Lambda can burst up to the account limit. If you want to **cap** how 
 3. View the **Concurrent executions** graph to confirm Lambda scaled in/out with the traffic.
 4. Optionally compare the two graphs with the CloudWatch Dashboard you build in section 5.5.3.
 
-![Figure 39. Lambda monitoring](/images/5-Workshop/5.5-Edms-operations/lambda-monitor.png)
+![Figure 39. Lambda monitoring](../../../images/5-Workshop/5.5-Edms-operations/lambda-monitor.png)
 
 > **Note:** If you ever see **Throttles** on the monitoring page, your reserved concurrency is too low or you are hitting the account limit — increase the value accordingly.

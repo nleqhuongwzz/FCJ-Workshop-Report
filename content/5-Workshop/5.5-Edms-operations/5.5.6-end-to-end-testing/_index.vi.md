@@ -13,14 +13,14 @@ Thực hiện một **kiểm thử end-to-end** qua ứng dụng web đã deploy
 1. Mở URL **Amplify** (default domain, ví dụ `https://main.d3xxxx.amplifyapp.com`).
 2. Bạn sẽ thấy trang **đăng nhập EDMS**, được phục vụ qua HTTPS.
 
-![Figure 50. Trang đăng nhập](/images/5-Workshop/5.5-Edms-operations/login.png)
+![Figure 50. Trang đăng nhập](../../../../images/5-Workshop/5.5-Edms-operations/login.png)
 
 ### 5.5.6.2 Đăng nhập với vai trò USER
 
 1. Đăng nhập với tài khoản **USER** đã tạo trong Cognito (mục 5.4).
 2. Xác nhận bạn đến được dashboard tài liệu.
 
-![Figure 51. Đăng nhập](/images/5-Workshop/5.5-Edms-operations/signin.png)
+![Figure 51. Đăng nhập](../../../../images/5-Workshop/5.5-Edms-operations/signin.png)
 
 ### 5.5.6.3 Tạo và upload tài liệu
 
@@ -42,7 +42,7 @@ Thực hiện một **kiểm thử end-to-end** qua ứng dụng web đã deploy
 4. **Duyệt** tài liệu — xác nhận trạng thái chuyển thành **`APPROVED`**.
 5. Kiểm tra hộp thư để nhận **email thông báo SNS** xác nhận việc phê duyệt.
 
-![Figure 52. Tài liệu được duyệt](/images/5-Workshop/5.5-Edms-operations/approved.png)
+![Figure 52. Tài liệu được duyệt](../../../../images/5-Workshop/5.5-Edms-operations/approved.png)
 
 ### 5.5.6.6 Xác minh Step Functions execution
 

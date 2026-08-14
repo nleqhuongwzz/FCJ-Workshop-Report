@@ -68,6 +68,6 @@ REACT_APP_COGNITO_REGION=ap-southeast-1
 2. Amplify runs the build pipeline (source → preBuild → build → deploy).
 3. Wait for the build status to become **Available**.
 
-![Figure 42. Amplify deployed](/images/5-Workshop/5.5-Edms-operations/amplify-deployed.png)
+![Figure 42. Amplify deployed](../../../images/5-Workshop/5.5-Edms-operations/amplify-deployed.png)
 
 > **Note:** The **default domain** (e.g. `https://main.d3xxxx.amplifyapp.com`) is the public URL of the application and is served automatically over **HTTPS** with a valid certificate.

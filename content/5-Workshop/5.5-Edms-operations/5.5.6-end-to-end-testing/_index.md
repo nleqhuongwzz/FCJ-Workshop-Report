@@ -13,14 +13,14 @@ Perform an **end-to-end test** through the deployed web application to verify th
 1. Open the **Amplify** URL (the default domain, e.g. `https://main.d3xxxx.amplifyapp.com`).
 2. You should see the EDMS **login page**, served over HTTPS.
 
-![Figure 50. Login page](/images/5-Workshop/5.5-Edms-operations/login.png)
+![Figure 50. Login page](../../../images/5-Workshop/5.5-Edms-operations/login.png)
 
 ### 5.5.6.2 Sign in as a USER
 
 1. Sign in with a **USER** account created in Cognito (section 5.4).
 2. Confirm you reach the document dashboard.
 
-![Figure 51. Sign in](/images/5-Workshop/5.5-Edms-operations/signin.png)
+![Figure 51. Sign in](../../../images/5-Workshop/5.5-Edms-operations/signin.png)
 
 ### 5.5.6.3 Create and upload a document
 
@@ -42,7 +42,7 @@ Perform an **end-to-end test** through the deployed web application to verify th
 4. **Approve** the document — confirm the status changes to **`APPROVED`**.
 5. Check your inbox for the **SNS email notification** confirming the approval.
 
-![Figure 52. Document approved](/images/5-Workshop/5.5-Edms-operations/approved.png)
+![Figure 52. Document approved](../../../images/5-Workshop/5.5-Edms-operations/approved.png)
 
 ### 5.5.6.6 Verify the Step Functions execution
 

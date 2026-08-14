@@ -68,6 +68,6 @@ REACT_APP_COGNITO_REGION=ap-southeast-1
 2. Amplify chạy pipeline build (source → preBuild → build → deploy).
 3. Chờ trạng thái build trở thành **Available**.
 
-![Figure 42. Amplify deployed](/images/5-Workshop/5.5-Edms-operations/amplify-deployed.png)
+![Figure 42. Amplify deployed](../../../../images/5-Workshop/5.5-Edms-operations/amplify-deployed.png)
 
 > **Ghi chú:** **Default domain** (ví dụ `https://main.d3xxxx.amplifyapp.com`) là URL công khai của ứng dụng và được phục vụ tự động qua **HTTPS** với chứng chỉ hợp lệ.

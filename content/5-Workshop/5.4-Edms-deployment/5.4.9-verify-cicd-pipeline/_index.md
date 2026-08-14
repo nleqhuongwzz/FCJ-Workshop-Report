@@ -13,7 +13,7 @@ After pushing the code and configuring the workflow, verify that the pipeline ru
 1. In your repository, open the **Actions** tab.
 2. You should see the `EDMS CI/CD` workflow listed. If there are runs, click the most recent one.
 
-![Figure 25. Workflow runs](/images/5-Workshop/5.4-Edms-deployment/workflow-runs.png)
+![Figure 25. Workflow runs](../../../images/5-Workshop/5.4-Edms-deployment/workflow-runs.png)
 
 > **Note:** If no run appears, make sure the `deploy.yml` file was committed and pushed to `main`. The workflow only triggers on pushes to that branch (5.4.2).
 

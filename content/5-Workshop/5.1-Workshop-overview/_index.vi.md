@@ -20,7 +20,7 @@ Hệ thống có ba vai trò tài khoản:
 
 Sơ đồ dưới đây mô tả kiến trúc nền tảng chúng ta sẽ xây dựng:
 
-![Kiến trúc EDMS](../../../../images/5-Workshop/5.1-Workshop-overview/architecture.png)
+![Kiến trúc EDMS](../../../images/5-Workshop/5.1-Workshop-overview/architecture.png)
 
 Hệ thống bao gồm các dịch vụ sau:
 

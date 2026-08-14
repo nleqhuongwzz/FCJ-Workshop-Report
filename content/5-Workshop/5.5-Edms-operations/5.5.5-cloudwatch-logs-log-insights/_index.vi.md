@@ -15,7 +15,7 @@ Mỗi Lambda function ghi output của nó vào **CloudWatch Logs**. Bạn có t
 3. Mở **log stream** mới nhất (mỗi stream tương ứng với một execution environment).
 4. Đọc các log events để xem output của function, timestamp, và mọi message được code in ra.
 
-![Figure 48. Log groups](/images/5-Workshop/5.5-Edms-operations/log-groups.png)
+![Figure 48. Log groups](../../../../images/5-Workshop/5.5-Edms-operations/log-groups.png)
 
 > **Ghi chú:** Mặc định logs được giữ vô thời hạn. Bạn có thể đặt **retention period** trong **Log groups** → **Actions** → **Edit retention** để kiểm soát chi phí lưu trữ.
 

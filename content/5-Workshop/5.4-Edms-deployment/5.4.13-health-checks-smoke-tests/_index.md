@@ -43,7 +43,7 @@ Now test the full serverless orchestration (Step Functions + SNS):
 4. Confirm the document becomes `APPROVED`.
 5. Check your inbox for the **SNS email** `EDMS - Approval`.
 
-![Figure 37. Approval smoke test](/images/5-Workshop/5.4-Edms-deployment/approval-test.png)
+![Figure 37. Approval smoke test](../../../images/5-Workshop/5.4-Edms-deployment/approval-test.png)
 
 ### 5.4.13.4 Check Step Functions execution
 
@@ -51,6 +51,6 @@ Now test the full serverless orchestration (Step Functions + SNS):
 2. You should see a **SUCCEEDED** execution for the document you approved.
 3. Open it and verify the states visited: `CaptureToken` → `Decision` → `MarkApproved` → `NotifyApproved`.
 
-![Figure 38. Execution succeeded](/images/5-Workshop/5.4-Edms-deployment/execution-succeeded.png)
+![Figure 38. Execution succeeded](../../../images/5-Workshop/5.4-Edms-deployment/execution-succeeded.png)
 
 > **Note:** The full ASL definition is in the repository (`backend/template.yaml`, resource `DocumentApprovalStateMachine`). It uses `waitForTaskToken` so the workflow can pause and wait for a manager's decision, then resume via `SendTaskSuccess`.

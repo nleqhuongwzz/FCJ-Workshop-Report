@@ -13,7 +13,7 @@ After the stack is created, verify that the resources exist and retrieve the **d
 1. Open the **CloudFormation console** → **Stacks**.
 2. Find `edms-iam-stack` and confirm its **Status** is **CREATE_COMPLETE**.
 
-![Figure 17. Stack complete](/images/5-Workshop/5.4-Edms-deployment/stack-complete.png)
+![Figure 17. Stack complete](../../../images/5-Workshop/5.4-Edms-deployment/stack-complete.png)
 
 3. If the status is **CREATE_FAILED** or **ROLLBACK_COMPLETE**, click **Events** to see the error (often a ThumbprintList or IAM acknowledgement issue), fix it, and recreate the stack.
 

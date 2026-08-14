@@ -24,7 +24,7 @@ Workflow ở 5.4.2 đọc các secret sau tại thời điểm deploy. Thêm ch�
 | `SNS_TOPIC_ARN` | SNS topic ARN (tạo ở 5.4.8) |
 | `BACKEND_LAMBDA_ARN` | ARN hàm Lambda (tạo sau deploy ở 5.4.9) |
 
-![Figure 19. GitHub secrets](/images/5-Workshop/5.4-Edms-deployment/secrets.png)
+![Figure 19. GitHub secrets](../../../../images/5-Workshop/5.4-Edms-deployment/secrets.png)
 
 ### 5.4.5.2 Thêm một repository secret
 

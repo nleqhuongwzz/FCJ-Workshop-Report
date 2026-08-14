@@ -24,7 +24,7 @@ The workflow in 5.4.2 reads these secrets at deploy time. Add them under **GitHu
 | `SNS_TOPIC_ARN` | The SNS topic ARN (created in 5.4.8) |
 | `BACKEND_LAMBDA_ARN` | The Lambda function ARN (created after deploy in 5.4.9) |
 
-![Figure 19. GitHub secrets](/images/5-Workshop/5.4-Edms-deployment/secrets.png)
+![Figure 19. GitHub secrets](../../../images/5-Workshop/5.4-Edms-deployment/secrets.png)
 
 ### 5.4.5.2 Add a repository secret
 

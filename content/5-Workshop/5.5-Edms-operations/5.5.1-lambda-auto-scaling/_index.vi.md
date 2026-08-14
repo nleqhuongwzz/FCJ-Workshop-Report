@@ -46,6 +46,6 @@ Mặc định Lambda có thể bùng lên tới giới hạn tài khoản. Nếu
 3. Xem biểu đồ **Concurrent executions** để xác nhận Lambda đã scale in/out theo lưu lượng.
 4. Tùy chọn so sánh hai biểu đồ với CloudWatch Dashboard bạn xây dựng trong mục 5.5.3.
 
-![Figure 39. Giám sát Lambda](/images/5-Workshop/5.5-Edms-operations/lambda-monitor.png)
+![Figure 39. Giám sát Lambda](../../../../images/5-Workshop/5.5-Edms-operations/lambda-monitor.png)
 
 > **Ghi chú:** Nếu bạn thấy **Throttles** trên trang giám sát, reserved concurrency của bạn quá thấp hoặc bạn đang chạm giới hạn tài khoản — hãy tăng giá trị tương ứng.
