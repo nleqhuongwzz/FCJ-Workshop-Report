@@ -23,6 +23,6 @@ pre: " <b> 1.2. </b> "
 
 ### Kết quả đạt được tuần 2:
 
-* **Kỹ năng thực hành cơ bản:** Thành thạo các bước khởi tạo máy chủ ảo EC2 và tạo kho chứa S3 Bucket trực tiếp trên AWS Management Console.
-* **Hiểu biết về bảo mật mạng cục bộ:** Nắm vững cách sử dụng Security Groups để kiểm soát lưu lượng ra vào máy chủ, đảm bảo chỉ mở các cổng mạng thực sự cần thiết.
-* **Thói quen quản lý tài nguyên:** Duy trì tốt quy tắc dọn dẹp tài nguyên sau khi thực hành, giúp hệ thống gọn gàng và hoàn toàn nằm trong hạn mức Free Tier.
+- Thành thạo các bước khởi tạo máy chủ ảo EC2 và tạo kho chứa S3 Bucket trực tiếp trên AWS Management Console.
+- Nắm vững cách sử dụng Security Groups để kiểm soát lưu lượng ra vào máy chủ, đảm bảo chỉ mở các cổng mạng thực sự cần thiết.
+- Duy trì tốt quy tắc dọn dẹp tài nguyên sau khi thực hành, giúp hệ thống gọn gàng và hoàn toàn nằm trong hạn mức Free Tier.

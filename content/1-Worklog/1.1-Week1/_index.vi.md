@@ -23,6 +23,6 @@ pre: " <b> 1.1. </b> "
 
 ### Kết quả đạt được tuần 1:
 
-* **Nền tảng Bảo mật & Chi phí:** Thiết lập thành công môi trường AWS an toàn. Tài khoản gốc đã được bảo vệ tuyệt đối và hệ thống cảnh báo ngân sách giúp ngăn ngừa hoàn toàn rủi ro phát sinh chi phí ngoài ý muốn trong quá trình học.
-* **Sẵn sàng Vận hành:** Hoàn tất chuyển đổi thao tác từ tài khoản Root sang tài khoản IAM. Môi trường phát triển cục bộ đã kết nối thành công với AWS qua CLI, cho phép quản lý tài nguyên trực tiếp từ terminal.
-* **Tư duy Hệ thống:** Hiểu rõ cách thức hoạt động của các dịch vụ cốt lõi, nắm bắt được sự tương quan giữa các nhóm dịch vụ Compute, Storage và Networking trong kiến trúc AWS.
+- Thiết lập thành công môi trường AWS an toàn. Tài khoản gốc đã được bảo vệ tuyệt đối và hệ thống cảnh báo ngân sách giúp ngăn ngừa hoàn toàn rủi ro phát sinh chi phí ngoài ý muốn trong quá trình học.
+- Hoàn tất chuyển đổi thao tác từ tài khoản Root sang tài khoản IAM. Môi trường phát triển cục bộ đã kết nối thành công với AWS qua CLI, cho phép quản lý tài nguyên trực tiếp từ terminal.
+- Hiểu rõ cách thức hoạt động của các dịch vụ cốt lõi, nắm bắt được sự tương quan giữa các nhóm dịch vụ Compute, Storage và Networking trong kiến trúc AWS.

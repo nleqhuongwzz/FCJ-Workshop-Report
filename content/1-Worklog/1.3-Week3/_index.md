@@ -23,6 +23,6 @@ pre: " <b> 1.3. </b> "
 
 ### Week 3 Achievements:
 
-* **IAM Permission Mastery:** Gained a solid understanding of how to use IAM Policies, User Groups, and Roles to securely manage and restrict access to resources.
-* **EC2 Virtual Server Proficiency:** Successfully provisioned and securely connected to a remote EC2 instance, understanding how Security Groups act as virtual firewalls to protect the system.
-* **S3 Storage Ownership:** Mastered fundamentals of object storage and successfully transformed a standard S3 bucket into a live, globally accessible static website.
+- Gained a solid understanding of how to use IAM Policies, User Groups, and Roles to securely manage and restrict access to resources.
+- Successfully provisioned and securely connected to a remote EC2 instance, understanding how Security Groups act as virtual firewalls to protect the system.
+- Mastered fundamentals of object storage and successfully transformed a standard S3 bucket into a live, globally accessible static website.

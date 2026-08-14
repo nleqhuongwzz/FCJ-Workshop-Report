@@ -24,4 +24,4 @@ Worklog này được hoàn thành trong 8 tuần, và nội dung từng tuần 
 
 **Tuần 7:** [Triển khai CI/CD, WAF, Secrets Manager và upload ảnh lên S3](1.7-Week7/)
 
-**Tuần 8:** [Kiểm thử, hoàn thiện tài liệu, và dọn dẹp hạ tầng](1.8-Week8/)
+**Tuần 8:** [Kiểm thử, hoàn thiện tài liệu](1.8-Week8/)

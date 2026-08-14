@@ -23,6 +23,6 @@ pre: " <b> 1.3. </b> "
 
 ### Kết quả đạt được tuần 3:
 
-* **Nắm vững quản lý quyền IAM:** Hiểu rõ cách sử dụng IAM Policies, Nhóm người dùng và Vai trò để phân quyền truy cập tài nguyên một cách an toàn.
-* **Thành thạo máy chủ ảo EC2:** Khởi tạo và kết nối bảo mật thành công vào máy chủ EC2 từ xa, hiểu cách hoạt động của Security Groups như một bức tường lửa ảo bảo vệ hệ thống.
-* **Làm chủ lưu trữ S3:** Nắm vững kiến thức cơ bản về lưu trữ đối tượng và chuyển đổi thành công một S3 bucket thành trang web tĩnh hoạt động trực tuyến.
+- Hiểu rõ cách sử dụng IAM Policies, Nhóm người dùng và Vai trò để phân quyền truy cập tài nguyên một cách an toàn.
+- Khởi tạo và kết nối bảo mật thành công vào máy chủ EC2 từ xa, hiểu cách hoạt động của Security Groups như một bức tường lửa ảo bảo vệ hệ thống.
+- Nắm vững kiến thức cơ bản về lưu trữ đối tượng và chuyển đổi thành công một S3 bucket thành trang web tĩnh hoạt động trực tuyến.

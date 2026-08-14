@@ -24,6 +24,6 @@ pre: " <b> 1.2. </b> "
 
 ### Week 2 Achievements:
 
-* **Basic Practical Skills:** Mastered the initialization steps for EC2 virtual servers and S3 buckets directly on the AWS Management Console.
-* **Network Security Understanding:** Gained a solid grasp of using Security Groups to control incoming and outgoing traffic, ensuring only required network ports are open.
-* **Resource Management Habit:** Maintained good practices for cleaning up resources after practicing, keeping the system tidy and strictly within the Free Tier limits.
+- Mastered the initialization steps for EC2 virtual servers and S3 buckets directly on the AWS Management Console.
+- Gained a solid grasp of using Security Groups to control incoming and outgoing traffic, ensuring only required network ports are open.
+- Maintained good practices for cleaning up resources after practicing, keeping the system tidy and strictly within the Free Tier limits.

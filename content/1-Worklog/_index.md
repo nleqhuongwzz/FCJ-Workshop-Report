@@ -24,4 +24,4 @@ This worklog was completed in 8 weeks, with the content for each week as follows
 
 **Week 7:** [Implementing CI/CD, WAF, Secrets Manager, and S3 image upload](1.7-Week7/)
 
-**Week 8:** [Testing, Final documentation, and cleanup](1.8-Week8/)
+**Week 8:** [Testing, Final documentation](1.8-Week8/)

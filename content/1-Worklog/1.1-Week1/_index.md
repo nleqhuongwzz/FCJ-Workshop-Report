@@ -23,6 +23,6 @@ pre: " <b> 1.1. </b> "
 
 ### Week 1 Achievements:
 
-* **Security & Cost Baseline:** Successfully established a well-architected baseline for the AWS account. The root environment is fully secured, and billing alarms ensure no unexpected charges occur during the learning process.
-* **Operational Readiness:** Completely transitioned away from Root user operations to IAM users. The local development environment is fully operational with AWS CLI, allowing for resource management directly from the terminal.
-* **System Thinking:** Gained a solid understanding of core service mechanics and the interrelations among Compute, Storage, and Networking within the AWS architecture.
+- Successfully established a well-architected baseline for the AWS account. The root environment is fully secured, and billing alarms ensure no unexpected charges occur during the learning process.
+- Completely transitioned away from Root user operations to IAM users. The local development environment is fully operational with AWS CLI, allowing for resource management directly from the terminal.
+- Gained a solid understanding of core service mechanics and the interrelations among Compute, Storage, and Networking within the AWS architecture.
