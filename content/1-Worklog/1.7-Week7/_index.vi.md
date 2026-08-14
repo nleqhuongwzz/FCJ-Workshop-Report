@@ -14,8 +14,8 @@ pre: " <b> 1.7. </b> "
 ### Các công việc cần triển khai trong tuần này
 | Ngày | Công việc chi tiết | Ngày bắt đầu | Ngày hoàn thành |
 | :---: | :--- | :---: | :---: |
-| 1 | Thiết lập Luồng CI/CD (GitHub Actions)<br>- Cấu hình workflow tự động hóa tại `.github/workflows/deploy.yml` để chạy unit test backend (`mvn test`) khi push lên nhánh `main`.<br>- Tích hợp OIDC assume role để xác thực an toàn với AWS mà không cần hard-code static AWS keys. | 03/08/2026 | 04/08/2026 |
-| 2 | Triển khai Frontend lên AWS Amplify<br>- Xây dựng giao diện React 18 SPA (`frontend/`) tích hợp Amazon Cognito Identity SDK, React Router và Axios.<br>- Tự động build (`npm ci && npm run build`) và deploy frontend lên AWS Amplify. | 05/08/2026 | 05/08/2026 |
+| 1 | Thiết lập Luồng CI/CD (GitHub Actions)<br>- Cấu hình workflow tự động hóa để chạy unit test backend.<br>- Tích hợp OIDC assume role để xác thực an toàn với AWS mà không cần hard-code static AWS keys. | 03/08/2026 | 04/08/2026 |
+| 2 | Triển khai Frontend lên AWS Amplify<br>- Xây dựng giao diện React 18 SPA tích hợp Amazon Cognito Identity SDK, React Router và Axios.<br>- Tự động build và deploy frontend lên AWS Amplify. | 05/08/2026 | 05/08/2026 |
 | 3 | Tự động hóa Deploy Backend qua SAM<br>- Tích hợp bước gọi lệnh `sam deploy` vào pipeline CI/CD để tự động cập nhật bản Lambda monolith (Spring Boot fat-jar) lên môi trường Production. | 06/08/2026 | 07/08/2026 |
 | 4 | Kiểm tra Kết nối VPC & Aurora MySQL<br>- Cấu hình Lambda chạy bên trong VPC cùng Security Group với cụm Aurora MySQL đảm bảo kết nối JDBC bảo mật tuyệt đối. | 08/08/2026 | 08/08/2026 |
 | 5 | Kiểm thử Tổng thể Pipeline & Đánh giá<br>- Thực hiện test toàn bộ luồng CI/CD từ lúc commit code đến khi cập nhật thành công lên API Gateway endpoint. | 09/08/2026 | 09/08/2026 |

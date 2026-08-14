@@ -8,7 +8,7 @@ pre: " <b> 6. </b> "
 
 During my internship at **AWS Vietnam Co., Ltd.** through the **BOOTCAMP FIRST CLOUD AI JOURNEY (FCAJ)** program from **22/06/2026** to **15/08/2026**, I had the opportunity to learn, practice, and apply the knowledge I had gained at university in a real working environment.
 
-I worked on the **Enterprise Document Collaboration Platform (EDMS)** project, a serverless document management system on AWS, which helped me improve my Cloud Computing skills, AWS service deployment skills, technical document reading, system design according to the AWS Well-Architected Framework, teamwork, progress management, report presentation, and problem-solving during implementation.
+I worked on the **Enterprise Document Collaboration Platform (EDMS)** project, a serverless document management system on AWS, which helped me improve my Cloud Computing skills, AWS service deployment skills, technical document reading, system design, teamwork, progress management, report presentation, and problem-solving during implementation.
 
 In terms of work ethic, I always tried to complete my tasks well, follow the regulations, and actively exchange ideas with colleagues to improve work efficiency.
 

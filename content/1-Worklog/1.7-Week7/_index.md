@@ -14,8 +14,8 @@ pre: " <b> 1.7. </b> "
 ## Tasks to be carried out this week:
 | Day | Detailed Tasks | Start Date | Completion Date |
 | :---: | :--- | :---: | :---: |
-| 1 | Set up CI/CD Pipeline (GitHub Actions)<br>- Configured automation workflow at `.github/workflows/deploy.yml` to run backend unit tests (`mvn test`) upon pushing to the `main` branch.<br>- Integrated OIDC assume role for secure authentication with AWS without hard-coding static AWS keys. | 03/08/2026 | 04/08/2026 |
-| 2 | Deploy Frontend to AWS Amplify<br>- Built the React 18 SPA interface (`frontend/`) integrating Amazon Cognito Identity SDK, React Router, and Axios.<br>- Automated the build (`npm ci && npm run build`) and deployment of the frontend to AWS Amplify. | 05/08/2026 | 05/08/2026 |
+| 1 | Set up CI/CD Pipeline (GitHub Actions)<br>- Configured automation workflow  to run backend unit tests.<br>- Integrated OIDC assume role for secure authentication with AWS without hard-coding static AWS keys. | 03/08/2026 | 04/08/2026 |
+| 2 | Deploy Frontend to AWS Amplify<br>- Built the React 18 SPA interface integrating Amazon Cognito Identity SDK, React Router, and Axios.<br>- Automated the build and deployment of the frontend to AWS Amplify. | 05/08/2026 | 05/08/2026 |
 | 3 | Automate Backend Deployment via SAM<br>- Integrated the `sam deploy` command step into the CI/CD pipeline to automatically update the Lambda monolith (Spring Boot fat-jar) build to the Production environment. | 06/08/2026 | 07/08/2026 |
 | 4 | Test VPC & Aurora MySQL Connectivity<br>- Configured Lambda to run inside a VPC sharing the same Security Group as the Aurora MySQL cluster to ensure absolute secure JDBC connectivity. | 08/08/2026 | 08/08/2026 |
 | 5 | Overall Pipeline Testing & Evaluation<br>- Performed end-to-end testing of the CI/CD pipeline from code commit to successful update on the API Gateway endpoint. | 09/08/2026 | 09/08/2026 |

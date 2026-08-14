@@ -9,7 +9,7 @@ pre: " <b> 6. </b> "
 
 Trong kỳ thực tập tại **Công ty TNHH AWS Vietnam** qua chương trình **BOOTCAMP FIRST CLOUD AI JOURNEY (FCAJ)** từ **22/06/2026** đến **15/08/2026**, em đã có cơ hội học, thực hành và áp dụng những kiến thức đã học ở trường vào môi trường làm việc thực tế.
 
-Em tham gia dự án **Nền tảng Cộng tác Tài liệu Doanh nghiệp (EDMS)**, một hệ thống quản lý tài liệu serverless trên AWS, giúp tôi cải thiện kỹ năng Cloud Computing, kỹ năng triển khai dịch vụ AWS, đọc tài liệu kỹ thuật, thiết kế hệ thống theo AWS Well-Architected Framework, làm việc nhóm, quản lý tiến độ, trình bày báo cáo, và giải quyết vấn đề trong quá trình triển khai.
+Em tham gia dự án **Nền tảng Cộng tác Tài liệu Doanh nghiệp (EDMS)**, một hệ thống quản lý tài liệu serverless trên AWS, giúp em cải thiện kỹ năng Cloud Computing, kỹ năng triển khai dịch vụ AWS, đọc tài liệu kỹ thuật, thiết kế hệ thống, làm việc nhóm, quản lý tiến độ, trình bày báo cáo, và giải quyết vấn đề trong quá trình triển khai.
 
 Về tác phong làm việc, em luôn cố gắng hoàn thành tốt nhiệm vụ, tuân thủ nội quy, và chủ động trao đổi ý tưởng với đồng nghiệp để nâng cao hiệu quả công việc.
 

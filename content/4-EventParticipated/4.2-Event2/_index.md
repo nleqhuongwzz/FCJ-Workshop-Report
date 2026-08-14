@@ -1,126 +1,70 @@
 ---
 title: "Event 2"
-date: 2024-01-01
+date: 2026-08-14
 weight: 1
 chapter: false
-pre: " <b> 4.2. </b> "
+pre: " <b> 4.1. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it verbatim** into your report, including this warning.
-{{% /notice %}}
 
-# Summary Report: “GenAI-powered App-DB Modernization workshop”
+# Event Report: “Cloud Architect - Grand Finale”
 
-### Event Objectives
+## Event Objectives
 
-- Share best practices in modern application design
-- Introduce Domain-Driven Design (DDD) and event-driven architecture
-- Provide guidance on selecting the right compute services
-- Present AI tools to support the development lifecycle
+- Summarize and award prizes for the system architecture design competition, creating a high-pressure hands-on playground for developers, students, and experts to showcase cloud infrastructure design thinking.
+- Deepen knowledge of critical technical standards in cloud system operations, such as Service Level Agreements (SLAs) and Monitoring tools.
+- Inspire and guide professional career development roadmaps, helping participants experience real-world scenarios and familiarize themselves with international standards like the AWS Certified Cloud Practitioner certification.
+- Provide opportunities for connection and direct networking among the tech community, students, and leading cloud computing experts.
 
-### Speakers
+## List of Teams
 
-- **Jignesh Shah** – Director, Open Source Databases
-- **Erica Liu** – Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** – Assc. Specialist SA, Serverless Amazon Web Services
+- **Team KLKAT**
+- **Team Ngu Dai Hiep**
 
-### Key Highlights
+## Key Highlights
 
-#### Identifying the drawbacks of legacy application architecture
+### 1. The Grand Finale & Architectural Strategies from Teams
 
-- Long product release cycles → Lost revenue/missed opportunities  
-- Inefficient operations → Reduced productivity, higher costs  
-- Non-compliance with security regulations → Security breaches, loss of reputation  
+- **High-stakes competitive environment:** The event took place at the Bitexco Financial Tower in a vibrant, professional, tense, and creative atmosphere.
+- **Hands-on system design:** Competing teams defended their architecture models before a judging panel, solving challenges regarding resource optimization, high availability, and operational costs on AWS.
 
-#### Transitioning to modern application architecture – Microservices
+### 2. SLAs & System Monitoring in Cloud Operations
 
-Migrating to a modular system — each function is an **independent service** communicating via **events**, built on three core pillars:
+- **The essence of SLAs and High Availability:** Explored uptime commitments and service availability guarantees from cloud providers.
+- **Designing for High Availability:** Methods for distributing resources across multiple Availability Zones (AZs) and applying redundancy models to eliminate Single Points of Failure (SPOF).
+- **The role of Monitoring:** Techniques for collecting performance metrics and analyzing log files to measure SLA compliance and detect anomalies early.
+- **Operational Optimization (MTTR):** Combining technical commitments with centralized monitoring tools to shorten incident resolution time and maintain system stability.
 
-- **Queue Management**: Handle asynchronous tasks  
-- **Caching Strategy**: Optimize performance  
-- **Message Handling**: Flexible inter-service communication  
+### 3. Career Direction with AWS Certified Cloud Practitioner
 
-#### Domain-Driven Design (DDD)
+- **Core foundational knowledge:** Summarized fundamental concepts of cloud computing, service models, the Shared Responsibility Model, and cloud economics.
+- **Career stepping stone:** Guided learning pathways and strategies to conquer international certifications for young engineers aiming to enter the Cloud Architecture field.
 
-- **Four-step method**: Identify domain events → arrange timeline → identify actors → define bounded contexts  
-- **Bookstore case study**: Demonstrates real-world DDD application  
-- **Context mapping**: 7 patterns for integrating bounded contexts  
+## Key Takeaways
 
-#### Event-Driven Architecture
+### Design & Strategic Thinking
 
-- **3 integration patterns**: Publish/Subscribe, Point-to-point, Streaming  
-- **Benefits**: Loose coupling, scalability, resilience  
-- **Sync vs async comparison**: Understanding the trade-offs  
+- **Sustainable system building mindset:** Understood how to design a cloud architecture that is not only functional but also fault-tolerant and resilient.
+- **Operational risk management:** Grasped the importance of setting Service Level Agreements (SLAs) alongside automated alert systems.
 
-#### Compute Evolution
+### Technical Architecture
 
-- **Shared Responsibility Model**: EC2 → ECS → Fargate → Lambda  
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value  
-- **Functions vs Containers**: Criteria for appropriate choice  
+- Mastered multi-region (Multi-AZ) infrastructure distribution methods for maximum availability.
+- Understood how to operate centralized monitoring tools to control distributed system performance.
+- Built a foundational mindset standardized against AWS reference architectures.
 
-#### Amazon Q Developer
+## Application to Work / Internship Projects
 
-- **SDLC automation**: From planning to maintenance  
-- **Code transformation**: Java upgrade, .NET modernization  
-- **AWS Transform agents**: VMware, Mainframe, .NET migration  
+- **Application to Graduation Projects:** Integrated fault-tolerant design thinking and proper resource allocation when building large-scale web applications.
+- **Building Monitoring Systems for Projects:** Self-setup basic log and metric tracking mechanisms for personal internship projects to easily debug issues.
+- **Career preparation:** Guided review and preparation for the AWS Certified Cloud Practitioner exam to create a competitive advantage when applying for Cloud/DevOps internship positions.
 
-### Key Takeaways
+## Personal Experience at the Event
 
-#### Design Mindset
+Attending the "Cloud Architect - Grand Finale" event was an invaluable and practical learning experience. Witnessing firsthand the intense competition and sharp problem-solving mindsets of the teams inside the modern Bitexco setting gave me a realistic perspective on how large-scale systems are built and operated. The deep dives into SLAs and Monitoring by experts helped me systemize my foundational operational knowledge, while further inspiring me to continuously improve my technical skills on the path to becoming a Cloud/DevOps engineer.
 
-- **Business-first approach**: Always start from the business domain, not the technology  
-- **Ubiquitous language**: Importance of a shared vocabulary between business and tech teams  
-- **Bounded contexts**: Identifying and managing complexity in large systems  
-
-#### Technical Architecture
-
-- **Event storming technique**: Practical method for modeling business processes  
-- Use **event-driven communication** instead of synchronous calls  
-- **Integration patterns**: When to use sync, async, pub/sub, streaming  
-- **Compute spectrum**: Criteria for choosing between VM, containers, and serverless  
-
-#### Modernization Strategy
-
-- **Phased approach**: No rushing — follow a clear roadmap  
-- **7Rs framework**: Multiple modernization paths depending on the application  
-- **ROI measurement**: Cost reduction + business agility  
-
-### Applying to Work
-
-- **Apply DDD** to current projects: Event storming sessions with business teams  
-- **Refactor microservices**: Use bounded contexts to define service boundaries  
-- **Implement event-driven patterns**: Replace some sync calls with async messaging  
-- **Adopt serverless**: Pilot AWS Lambda for suitable use cases  
-- **Try Amazon Q Developer**: Integrate into the dev workflow to boost productivity  
-
-### Event Experience
-
-Attending the **“GenAI-powered App-DB Modernization”** workshop was extremely valuable, giving me a comprehensive view of modernizing applications and databases using advanced methods and tools. Key experiences included:
-
-#### Learning from highly skilled speakers
-- Experts from AWS and major tech organizations shared **best practices** in modern application design.  
-- Through real-world case studies, I gained a deeper understanding of applying **DDD** and **Event-Driven Architecture** to large projects.  
-
-#### Hands-on technical exposure
-- Participating in **event storming** sessions helped me visualize how to **model business processes** into domain events.  
-- Learned how to **split microservices** and define **bounded contexts** to manage large-system complexity.  
-- Understood trade-offs between **synchronous and asynchronous communication** and integration patterns like **pub/sub, point-to-point, streaming**.  
-
-#### Leveraging modern tools
-- Explored **Amazon Q Developer**, an AI tool for SDLC support from planning to maintenance.  
-- Learned to **automate code transformation** and pilot serverless with **AWS Lambda** to improve productivity.  
-
-#### Networking and discussions
-- The workshop offered opportunities to exchange ideas with experts, peers, and business teams, enhancing the **ubiquitous language** between business and tech.  
-- Real-world examples reinforced the importance of the **business-first approach** rather than focusing solely on technology.  
-
-#### Lessons learned
-- Applying DDD and event-driven patterns reduces **coupling** while improving **scalability** and **resilience**.  
-- Modernization requires a **phased approach** with **ROI measurement**; rushing the process can be risky.  
-- AI tools like Amazon Q Developer can significantly **boost productivity** when integrated into the current workflow.  
-
-#### Some event photos
-*Add your event photos here*  
+#### Some photos from the event
+![Event Image](/images/4-Event/event2-1.jpg)
+![Event Image](/images/4-Event/event2-2.jpeg)
 
 > Overall, the event not only provided technical knowledge but also helped me reshape my thinking about application design, system modernization, and cross-team collaboration.
