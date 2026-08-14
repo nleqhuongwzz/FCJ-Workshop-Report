@@ -7,7 +7,7 @@ pre: " <b> 4.1. </b> "
 ---
 
 
-# Event Report: “Cloud Architect - Grand Finale”
+# Event Report: “Cloud Architect”
 
 ## Event Objectives
 

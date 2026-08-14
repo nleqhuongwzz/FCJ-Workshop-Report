@@ -7,7 +7,7 @@ pre: " <b> 4.1. </b> "
 ---
 
 
-# Bài Thu Hoạch Sự Kiện “Cloud Architect - Trận Chung Kết (Grand Finale)”
+# Bài Thu Hoạch Sự Kiện “Cloud Architect”
 
 ## Mục Đích Của Sự Kiện
 
