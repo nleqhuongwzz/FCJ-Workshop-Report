@@ -6,8 +6,6 @@ chapter: false
 pre: " <b> 3. </b> "
 ---
 
-Tại đây sẽ là phần liệt kê, giới thiệu các blogs mà tôi đã đăng trên [AWS Study Group](https://www.facebook.com/groups/awsstudygroupfcj).
-
 ### [Blog 1 - Xây dựng Hệ thống Nông nghiệp Thông minh với Kiến trúc Multi-Agent trên AWS IoT Greengrass](3.1-Blog1/)
 Blog này giới thiệu cách đưa khả năng suy luận của AI xuống thiết bị biên (Raspberry Pi 5) bằng kiến trúc AI Agent kết hợp AWS IoT Greengrass. Bài viết giải thích cách các agent Camera, Sensor và Orchestrator phối hợp để đưa ra quyết định tưới tiêu real-time ngay cả khi mất mạng, và cách quản lý thiết bị hàng loạt qua Over-The-Air updates.
 

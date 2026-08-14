@@ -6,8 +6,6 @@ chapter: false
 pre: " <b> 3. </b> "
 ---
 
-This section lists and introduces the blogs I have posted to [AWS Study Group](https://www.facebook.com/groups/awsstudygroupfcj).
-
 ### [Blog 1 - Building a Smart Agriculture System with Multi-Agent Architecture on AWS IoT Greengrass](3.1-Blog1/)
 
 This blog introduces how to bring AI reasoning capabilities directly to edge devices (Raspberry Pi 5) using an AI Agent architecture combined with AWS IoT Greengrass. It explains how Camera, Sensor, and Orchestrator agents work together to make real-time irrigation decisions even when the network is offline, and how devices are managed at scale via Over-The-Air updates.
