@@ -20,6 +20,6 @@ pre: " <b> 1.4. </b> "
 | 4 | Event Processing & Approval Workflow Research<br>- Designed the document approval workflow using AWS Step Functions with the waitForTaskToken pattern (supporting human-in-the-loop business processes with unlimited waiting time).<br>- Integrated Amazon SNS to automatically send email notifications for approval results (approve/reject).<br>- Defined granular document permission mechanisms by access level (OWNER, EDITOR, VIEWER). | 15/07/2026 | 15/07/2026 |
 | 5 | Roadmap Finalization, Documentation & Evaluation<br>- Finalized core technical documentation and the Hexagonal Clean Architecture package structure.<br>- Prepared technical materials and prepared for the system architecture review meeting prior to the product realization phase. | 16/07/2026 | 16/07/2026 |
 
-### Week 5 Achievements:
+### Week 4 Achievements:
 - Completed the selection of the EDMS (Enterprise Document Collaboration Platform) topic and established a detailed deployment plan for the product implementation phase.
 - Successfully constructed the system design blueprint utilizing optimal AWS services (API Gateway, Lambda, Aurora MySQL, S3, Cognito, Step Functions, SNS, Amplify), ensuring seamless auto-scaling and minimized operational costs.
