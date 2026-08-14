@@ -25,7 +25,7 @@ Bấm vào run gần nhất và xác nhận cả ba job đều thành công:
 + `build-frontend` — ✅ chạy `npm ci && npm run build`.
 + `deploy` — ✅ xác thực qua OIDC và chạy `sam deploy`.
 
-![Figure 26. Các job pass](/images/5-Workshop/5.4-Edms-deployment/jobs-pass.png)
+![Figure 26. Các job pass](../../../../images/5-Workshop/5.4-Edms-deployment/jobs-pass.png)
 
 Nếu bạn đã cấu hình **required reviewers** ở 5.4.6, job `deploy` sẽ hiện nút **Review deployments** — hãy phê duyệt để job tiếp tục.
 
@@ -35,7 +35,7 @@ Nếu bạn đã cấu hình **required reviewers** ở 5.4.6, job `deploy` sẽ
 2. Tìm `edms-lambda-stack` (stack mà SAM deploy tới).
 3. Xác nhận trạng thái của nó là **UPDATE_COMPLETE** (hoặc **CREATE_COMPLETE** ở lần chạy đầu).
 
-![Figure 27. Stack được cập nhật](/images/5-Workshop/5.4-Edms-deployment/stack-updated.png)
+![Figure 27. Stack được cập nhật](../../../../images/5-Workshop/5.4-Edms-deployment/stack-updated.png)
 
 4. Mở tab **Resources** và xác nhận hàm Lambda cùng các tài nguyên khác (API Gateway, Step Functions) đã được tạo.
 

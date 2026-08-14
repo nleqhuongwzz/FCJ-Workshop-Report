@@ -25,7 +25,7 @@ Click into the latest run and confirm all three jobs succeed:
 + `build-frontend` — ✅ runs `npm ci && npm run build`.
 + `deploy` — ✅ authenticates via OIDC and runs `sam deploy`.
 
-![Figure 26. Jobs pass](/images/5-Workshop/5.4-Edms-deployment/jobs-pass.png)
+![Figure 26. Jobs pass](../../../images/5-Workshop/5.4-Edms-deployment/jobs-pass.png)
 
 If you configured **required reviewers** in 5.4.6, the `deploy` job will show a **Review deployments** button — approve it to let the job continue.
 
@@ -35,7 +35,7 @@ If you configured **required reviewers** in 5.4.6, the `deploy` job will show a 
 2. Find `edms-lambda-stack` (the stack SAM deployed to).
 3. Confirm its status is **UPDATE_COMPLETE** (or **CREATE_COMPLETE** on the first run).
 
-![Figure 27. Stack updated](/images/5-Workshop/5.4-Edms-deployment/stack-updated.png)
+![Figure 27. Stack updated](../../../images/5-Workshop/5.4-Edms-deployment/stack-updated.png)
 
 4. Open the **Resources** tab and confirm the Lambda function and any other resources (API Gateway, Step Functions) were created.
 
