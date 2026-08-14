@@ -1,31 +1,41 @@
 ---
 title: "Blog 2"
-date: 2024-01-01
-weight: 1
+date: 2026-08-14
+weight: 2
 chapter: false
 pre: " <b> 3.2. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
-# SESSION POLICIES TRONG AMAZON EKS POD IDENTITY
+# GIẢI QUYẾT BÀI TOÁN TRAFFIC BIẾN ĐỘNG TRONG GAME VỚI AMAZON DOCUMENTDB SERVERLESS
 
-Amazon EKS Pod Identity vừa bổ sung tính năng session policies, cho phép bạn thu hẹp quyền IAM một cách linh hoạt và chính xác cho từng pod mà không cần tạo thêm nhiều IAM roles riêng biệt. Đây là bước tiến quan trọng giúp áp dụng nguyên tắc least privilege hiệu quả hơn trong môi trường Kubernetes quy mô lớn.
+Làm game, đặc biệt là mấy thể loại chiến thuật hay MOBA, ai cũng mong sản phẩm của mình đông người chơi. Nhưng sự thật phũ phàng là lúc traffic tăng đột biến thì database rất dễ bị nghẽn cổ chai và lăn ra chết. Nếu cấp phát tài nguyên dư thừa thì tốn tiền vận hành những lúc vắng khách, mà cấp ít thì server sập giữa chừng làm trải nghiệm người chơi tệ đi. Gần đây mình có mò mẫm các kiến trúc hạ tầng trên AWS để giải bài toán này và thấy **Amazon DocumentDB Serverless** là một giải pháp cực kỳ đáng thử.
 
-Các điểm chính cần nắm:
+## TẠI SAO BÀI TOÁN NÀY LẠI CẦN SERVERLESS DATABASE?
 
-* Session policy là một IAM policy inline được chỉ định khi tạo hoặc cập nhật Pod Identity association.
-* Quyền hiệu quả = intersection (giao) giữa permissions của IAM role và session policy → session policy chỉ có thể thu hẹp, không thể mở rộng quyền.
-* Giúp tránh tình trạng over-permissioning khi reuse chung một IAM role cho nhiều workloads có nhu cầu khác nhau.
-* Hỗ trợ cả same-account và cross-account (qua IAM role chaining).
-* Giảm đáng kể số lượng IAM roles cần quản lý, tránh chạm giới hạn quota IAM trong cluster lớn.
-* Cấu hình dễ dàng qua AWS Management Console, AWS CLI hoặc AWS SDK khi tạo association giữa Kubernetes ServiceAccount và IAM role.
+Nếu dùng một database truyền thống hoặc tự host, anh em sẽ phải liên tục canh metric và tự scale bằng tay hoặc cài đặt các rule auto-scale rất mệt mỏi. Với bản chất của Serverless Database, hệ thống sẽ tự động scale công suất lên xuống theo đúng nhu cầu thực tế của ứng dụng.
 
-Tính năng này đặc biệt hữu ích khi bạn có nhiều ứng dụng chạy trên cùng một IAM role nhưng cần giới hạn quyền khác nhau (ví dụ: một pod chỉ đọc S3 bucket cụ thể, pod khác chỉ gọi một số API nhất định).
+Những lúc diễn ra event giờ vàng traffic có thể x10 x100, database tự động phình ra gánh tải mà không cần ai phải túc trực can thiệp. Thay vì tốn thời gian loay hoay config server hay backup, anh em dev có thể dồn 100% công lực vào việc viết logic game hoặc tối ưu luồng chạy.
 
-...Hình ảnh...
+## ĐIỂM SÁNG TỪ AMAZON DOCUMENTDB SERVERLESS
 
-...Link...
+Khi tìm hiểu sâu vào cách triển khai trên AWS, mình thấy có 3 điểm giải quyết rất mượt các rào cản kỹ thuật:
 
-...Hướng dẫn...
+- **Xài bao nhiêu trả bấy nhiêu**: Nó không tính phí theo dung lượng server bạn thuê cố định, mà dựa trên tài nguyên thực sự tiêu thụ. Hết event, ít người chơi, hệ thống tự động thu nhỏ lại về mức tối thiểu, tiết kiệm được một khoản chi phí hạ tầng khổng lồ.
+- **Tương thích mượt mà với MongoDB**: Đây là điểm mình ưng nhất. Ở các project đòi hỏi tính năng realtime như ứng dụng chat, mình hay dùng stack Node.js kết hợp ExpressJS và MongoDB. Sang hệ sinh thái này thì gần như không phải đập đi viết lại code hay đổi driver. Chỉ cần sửa đúng cái connection string là hệ thống chạy bình thường.
+- **Độ an toàn dữ liệu cao**: Dữ liệu được tự động phân tán trên 3 Availability Zones khác nhau. Game của bạn không lo bị rollback hay mất mát dữ liệu người chơi nếu lỡ có một data center nào đó gặp sự cố vật lý.
+
+## GÓC NHÌN RÚT RA KHI TÌM HIỂU CHỦ ĐỀ NÀY
+
+Điều mình thích nhất ở kiến trúc Serverless không chỉ nằm ở công nghệ, mà là sự thay đổi về tư duy thiết kế hệ thống. Thay vì tư duy dự đoán mức tải và chuẩn bị sẵn tài nguyên từ trước, chúng ta chuyển sang hướng linh hoạt và đáp ứng tức thời.
+
+Trước đây khi làm các project yêu cầu kết nối liên tục, việc database bị quá tải luôn là nỗi ám ảnh. Việc đẩy phần vận hành khó nhằn này cho một managed service như DocumentDB Serverless giúp kỹ sư rảnh tay hơn hẳn, không lo sập server mỗi đợt release tính năng lớn.
+
+## TÀI LIỆU THAM KHẢO
+
+- AWS for Games Blog. _Game developer's guide to Amazon DocumentDB Serverless._
+- AWS Documentation. _Amazon DocumentDB Serverless._
+
+Thành phố Hồ Chí Minh, tháng 8 năm 2026
+Huỳnh Phúc Hưng
+
+[Blog link at AWS Study Group](https://www.facebook.com/groups/awsstudygroupfcj/permalink/2238353500262943/)

@@ -1,31 +1,47 @@
 ---
 title: "Blog 3"
-date: 2024-01-01
-weight: 1
+date: 2026-08-14
+weight: 3
 chapter: false
 pre: " <b> 3.3. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
-# SESSION POLICIES TRONG AMAZON EKS POD IDENTITY
+# Khám Phá Mô Hình Multi-Agent Tự Động "Đọc Code Ra Doc": Amazon Bedrock AgentCore Và MCP
 
-Amazon EKS Pod Identity vừa bổ sung tính năng session policies, cho phép bạn thu hẹp quyền IAM một cách linh hoạt và chính xác cho từng pod mà không cần tạo thêm nhiều IAM roles riêng biệt. Đây là bước tiến quan trọng giúp áp dụng nguyên tắc least privilege hiệu quả hơn trong môi trường Kubernetes quy mô lớn.
+Nếu có một công việc mà 99% kỹ sư phần mềm hay kỹ sư dữ liệu đều ngại làm, thì đó chính là viết và cập nhật tài liệu. Code thì đã refactor sang phiên bản mới, API đã thêm 5 tham số, nhưng cuốn Wiki trên Confluence hay Notion thì vẫn dừng lại ở câu chuyện của... năm ngoái. Tài liệu lỗi thời còn nguy hiểm hơn không có tài liệu, vì nó trực tiếp làm tốn thời gian của các thành viên mới và gây ra vô số hiểu lầm khi bàn giao hệ thống.
 
-Các điểm chính cần nắm:
+Vừa qua, mình có dành thời gian tìm hiểu một giải pháp cực kỳ thú vị từ hệ sinh thái AWS: Sử dụng kiến trúc Multi-Agent kết hợp **Amazon Bedrock AgentCore** và giao thức **MCP** để tự động tạo và bảo trì tài liệu kỹ thuật theo thời gian thực.
 
-* Session policy là một IAM policy inline được chỉ định khi tạo hoặc cập nhật Pod Identity association.
-* Quyền hiệu quả = intersection (giao) giữa permissions của IAM role và session policy → session policy chỉ có thể thu hẹp, không thể mở rộng quyền.
-* Giúp tránh tình trạng over-permissioning khi reuse chung một IAM role cho nhiều workloads có nhu cầu khác nhau.
-* Hỗ trợ cả same-account và cross-account (qua IAM role chaining).
-* Giảm đáng kể số lượng IAM roles cần quản lý, tránh chạm giới hạn quota IAM trong cluster lớn.
-* Cấu hình dễ dàng qua AWS Management Console, AWS CLI hoặc AWS SDK khi tạo association giữa Kubernetes ServiceAccount và IAM role.
+## 1. TẠI SAO BÀI TOÁN NÀY LẠI CẦN MULTI-AGENT?
 
-Tính năng này đặc biệt hữu ích khi bạn có nhiều ứng dụng chạy trên cùng một IAM role nhưng cần giới hạn quyền khác nhau (ví dụ: một pod chỉ đọc S3 bucket cụ thể, pod khác chỉ gọi một số API nhất định).
+Nếu chỉ dùng một Chatbot AI thông thường và quăng cả folder code vào, bạn sẽ nhận lại một đoạn tóm tắt rất chung chung và hay bị hụt ngữ cảnh. Để tạo ra một bộ tài liệu chuẩn chỉnh cho doanh nghiệp, hệ thống cần chia nhỏ công việc cho các đại lý chuyên biệt:
 
-...Hình ảnh...
+- **Code Analyzer Agent**: Đọc cấu trúc thư mục, phân tích luồng chạy của hàm và trích xuất các endpoint API/Data Pipeline.
+- **Architecture Diagram Agent**: Tự động đọc cấu trúc hạ tầng/code để vẽ lại sơ đồ luồng (Flowchart, Sequence Diagram) dưới dạng mã Mermaid.js.
+- **Technical Writer Agent**: Tổng hợp thông tin, viết lại bằng văn phong chuẩn mực, dễ hiểu cho cả Dev lẫn Product Owner.
+- **Doc Sync Agent**: So sánh tài liệu hiện có với code mới nhất trong Pull Request để chỉ cập nhật đúng những phần có sự thay đổi (Delta update).
 
-...Link...
+## 2. ĐIỂM SÁNG TỪ BỘ CÔNG CỤ AMAZON BEDROCK AGENTCORE
 
-...Hướng dẫn...
+Khi tìm hiểu sâu vào cách triển khai trên AWS, mình thấy 3 thành phần này giải quyết rất mượt các rào cản kỹ thuật:
+
+- **Kết nối đa nền tảng qua AgentCore Gateway (MCP)**: Nhờ chuẩn Model Context Protocol (MCP), các Agent có thể vừa đọc từ GitHub/GitLab, vừa viết trực tiếp vào Notion, Confluence hay MkDocs mà không cần viết các đoạn code tích hợp rườm rà.
+- **Ghi nhớ ngữ cảnh nhờ AgentCore Memory**: AI không viết lại tài liệu từ đầu mỗi khi có commit mới. Nó nhớ cấu trúc tài liệu cũ và chỉ bổ sung/chỉnh sửa những phần code thực sự có thay đổi.
+- **An toàn tuyệt đối cho Codebase**: Toàn bộ quá trình đọc code diễn ra trong môi trường isolated của Bedrock Runtime. Code nội bộ của công ty hoàn toàn không bị rò rỉ hay bị dùng để huấn luyện mô hình công cộng.
+
+## 3. GÓC NHÌN RÚT RA KHI TÌM HIỂU CHỦ ĐỀ NÀY
+
+Điều mình thích nhất ở mô hình này là nó đổi mới hoàn toàn tư duy làm tài liệu: Từ tài liệu tĩnh (Static Doc) sang tài liệu sống (Living Doc).
+
+Tài liệu giờ đây trở thành một phần của CI/CD Pipeline. Khi Dev gộp code (Merge PR), AI Agent sẽ tự động chạy ngầm, rà soát thay đổi và gửi một Pull Request cập nhật lại file README.md hoặc trang Confluence tương ứng. Lập trình viên chỉ việc bấm "Approve" là xong.
+
+## TÀI LIỆU THAM KHẢO
+
+- AWS Agentic Workflows: Amazon Web Services (2025). _Building Living Documentation Pipelines using Amazon Bedrock AgentCore._ AWS Architecture Center.
+- Giao thức & Framework: Anthropic (2024). _Model Context Protocol (MCP): Connecting AI Models to Enterprise Knowledge Bases & Developer Tools._
+- LangChain / LangGraph Docs. _Multi-Agent Orchestration for Code Graph Analysis._
+
+Thành phố Hồ Chí Minh, tháng 8 năm 2026
+Huỳnh Minh Quân
+
+[Blog link at AWS Study Group](https://www.facebook.com/groups/awsstudygroupfcj/multi_permalinks/2234417337323226/)

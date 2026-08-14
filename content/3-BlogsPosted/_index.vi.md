@@ -1,22 +1,18 @@
 ---
 title: "Các bài blogs đã đăng"
-date: 2024-01-01
+date: 2026-08-14
 weight: 3
 chapter: false
 pre: " <b> 3. </b> "
 ---
 
-{{% notice warning %}}  
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
+Tại đây sẽ là phần liệt kê, giới thiệu các blogs mà tôi đã đăng trên [AWS Study Group](https://www.facebook.com/groups/awsstudygroupfcj).
 
-Tại đây sẽ là phần liệt kê, giới thiệu các blogs mà các bạn đã đăng trên [AWS Study Group](https://www.facebook.com/groups/awsstudygroupfcj). Ví dụ:
+### [Blog 1 - Xây dựng Hệ thống Nông nghiệp Thông minh với Kiến trúc Multi-Agent trên AWS IoT Greengrass](3.1-Blog1/)
+Blog này giới thiệu cách đưa khả năng suy luận của AI xuống thiết bị biên (Raspberry Pi 5) bằng kiến trúc AI Agent kết hợp AWS IoT Greengrass. Bài viết giải thích cách các agent Camera, Sensor và Orchestrator phối hợp để đưa ra quyết định tưới tiêu real-time ngay cả khi mất mạng, và cách quản lý thiết bị hàng loạt qua Over-The-Air updates.
 
-###  [Blog 1 - SESSION POLICIES TRONG AMAZON EKS POD IDENTITY](3.1-Blog1/)
-Blog này giới thiệu Amazon EKS Pod Identity vừa bổ sung tính năng session policies, cho phép bạn thu hẹp quyền IAM một cách linh hoạt và chính xác cho từng pod mà không cần tạo thêm nhiều IAM roles riêng biệt. Đây là bước tiến quan trọng giúp áp dụng nguyên tắc least privilege hiệu quả hơn trong môi trường Kubernetes quy mô lớn.
+### [Blog 2 - Giải quyết Bài toán Traffic biến động trong Game với Amazon DocumentDB Serverless](3.2-Blog2/)
+Blog này giới thiệu Amazon DocumentDB Serverless như một giải pháp xử lý traffic tăng đột biến trong game. Bài viết giải thích mô hình scale trả theo mức sử dụng, khả năng tương thích mượt mà với MongoDB (Node.js + ExpressJS), và độ an toàn dữ liệu cao khi phân tán trên 3 Availability Zones.
 
-###  [Blog 2 - ...](3.2-Blog2/)
-Blog này giới thiệu Amazon EKS Pod Identity vừa bổ sung tính năng session policies, cho phép bạn thu hẹp quyền IAM một cách linh hoạt và chính xác cho từng pod mà không cần tạo thêm nhiều IAM roles riêng biệt. Đây là bước tiến quan trọng giúp áp dụng nguyên tắc least privilege hiệu quả hơn trong môi trường Kubernetes quy mô lớn.
-
-###  [Blog 3 - ...](3.3-Blog3/)
-Blog này giới thiệu Amazon EKS Pod Identity vừa bổ sung tính năng session policies, cho phép bạn thu hẹp quyền IAM một cách linh hoạt và chính xác cho từng pod mà không cần tạo thêm nhiều IAM roles riêng biệt. Đây là bước tiến quan trọng giúp áp dụng nguyên tắc least privilege hiệu quả hơn trong môi trường Kubernetes quy mô lớn.
+### [Blog 3 - Khám phá Mô hình Multi-Agent "Đọc Code Ra Doc": Amazon Bedrock AgentCore và MCP](3.3-Blog3/)
+Blog này giới thiệu kiến trúc Multi-Agent kết hợp Amazon Bedrock AgentCore và giao thức MCP để tự động tạo và bảo trì tài liệu kỹ thuật. Bài viết giải thích các agent Code Analyzer, Architecture Diagram, Technical Writer và Doc Sync, cùng việc tài liệu trở thành một phần của CI/CD Pipeline như Living Documentation.
