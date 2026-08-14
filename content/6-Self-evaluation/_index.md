@@ -6,13 +6,13 @@ chapter: false
 pre: " <b> 6. </b> "
 ---
 
-Throughout the **AWS First Cloud AI Journey - FCAJ** internship program from **June 2026** to **August 2026**, I had the opportunity to learn, practice, and apply my Information Technology major knowledge to build real-world systems on cloud computing platforms.
+During my internship at **AWS Vietnam Co., Ltd.** through the **BOOTCAMP FIRST CLOUD AI JOURNEY (FCAJ)** program from **22/06/2026** to **15/08/2026**, I had the opportunity to learn, practice, and apply the knowledge I had gained at university in a real working environment.
 
-I participated in researching and developing a Serverless Electronic Document Management System (EDMS) on AWS, through which I significantly improved my skills in AWS cloud architecture design, Serverless service deployment, AWS CI/CD automation, and cloud-based database management.
+I worked on the **Enterprise Document Collaboration Platform (EDMS)** project, a serverless document management system on AWS, which helped me improve my Cloud Computing skills, AWS service deployment skills, technical document reading, system design according to the AWS Well-Architected Framework, teamwork, progress management, report presentation, and problem-solving during implementation.
 
-Regarding work ethic, I consistently strived to complete assigned tasks effectively, proactively explored technical solutions, and strictly adhered to project milestones.
+In terms of work ethic, I always tried to complete my tasks well, follow the regulations, and actively exchange ideas with colleagues to improve work efficiency.
 
-To objectively reflect my internship process, I self-assess my performance based on the following criteria:
+To reflect objectively on my internship experience, I would like to evaluate myself based on the following criteria:
 
 | No. | Criteria | Description | Good | Fair | Average |
 | :--- | :--- | :--- | :---: | :---: | :---: |
@@ -32,5 +32,5 @@ To objectively reflect my internship process, I self-assess my performance based
 ### Areas for Improvement
 
 * Further develop communication skills and present technical ideas more concisely and coherently during presentations or work discussions.
-* Continue expanding in-depth knowledge of advanced security services and performance optimization for large-scale distributed systems.
+* Deepen knowledge of advanced security services and optimize the performance of large-scale distributed systems.
 * Cultivate more flexible situational handling skills when encountering unexpected incidents during cloud infrastructure operations.

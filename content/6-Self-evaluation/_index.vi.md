@@ -7,13 +7,13 @@ pre: " <b> 6. </b> "
 ---
 
 
-Trong suốt thời gian tham gia chương trình thực tập **AWS First Cloud AI Journey - FCAJ** từ **tháng 06/2026** đến **tháng 08/2026**, tôi đã có cơ hội học hỏi, rèn luyện và áp dụng kiến thức chuyên ngành Công nghệ thông tin vào quá trình xây dựng hệ thống thực tế trên nền tảng điện toán đám mây. 
+Trong kỳ thực tập tại **Công ty TNHH AWS Vietnam** qua chương trình **BOOTCAMP FIRST CLOUD AI JOURNEY (FCAJ)** từ **22/06/2026** đến **15/08/2026**, em đã có cơ hội học, thực hành và áp dụng những kiến thức đã học ở trường vào môi trường làm việc thực tế.
 
-Tôi đã tham gia nghiên cứu và phát triển hệ thống quản lý tài liệu điện tử (EDMS) theo kiến trúc Serverless trên AWS, qua đó cải thiện mạnh mẽ các kỹ năng về thiết kế kiến trúc đám mây AWS, triển khai các dịch vụ Serverless, xây dựng luồng tự động hóa CI/CD trên AWS và quản trị các dịch vụ cơ sở dữ liệu trên nền tảng đám mây AWS.
+Em tham gia dự án **Nền tảng Cộng tác Tài liệu Doanh nghiệp (EDMS)**, một hệ thống quản lý tài liệu serverless trên AWS, giúp tôi cải thiện kỹ năng Cloud Computing, kỹ năng triển khai dịch vụ AWS, đọc tài liệu kỹ thuật, thiết kế hệ thống theo AWS Well-Architected Framework, làm việc nhóm, quản lý tiến độ, trình bày báo cáo, và giải quyết vấn đề trong quá trình triển khai.
 
-Về tác phong, tôi luôn cố gắng hoàn thành tốt các nhiệm vụ được giao, chủ động tìm tòi giải pháp kỹ thuật, và tuân thủ chặt chẽ các mốc thời gian hoàn thành dự án.
+Về tác phong làm việc, em luôn cố gắng hoàn thành tốt nhiệm vụ, tuân thủ nội quy, và chủ động trao đổi ý tưởng với đồng nghiệp để nâng cao hiệu quả công việc.
 
-Để phản ánh một cách khách quan quá trình thực tập, tôi xin tự đánh giá bản thân dựa trên các tiêu chí dưới đây:
+Để phản ánh khách quan trải nghiệm thực tập, em muốn tự đánh giá dựa trên các tiêu chí sau:
 
 | STT | Tiêu chí | Mô tả | Tốt | Khá | Trung bình |
 | :--- | :--- | :--- | :---: | :---: | :---: |
@@ -33,5 +33,5 @@ Về tác phong, tôi luôn cố gắng hoàn thành tốt các nhiệm vụ đ�
 ### Cần cải thiện
 
 * Trau dồi thêm kỹ năng giao tiếp và trình bày ý tưởng kỹ thuật một cách súc tích, mạch lạc hơn trong các buổi thuyết trình hoặc trao đổi công việc.
-* Tiếp tục mở rộng chiều sâu kiến thức về các dịch vụ bảo mật nâng cao và tối ưu hóa hiệu năng hệ thống phân tán quy mô lớn.
+* Phát triển thêm chiều sâu kiến thức về các dịch vụ bảo mật nâng cao và tối ưu hóa hiệu năng hệ thống phân tán quy mô lớn.
 * Rèn luyện thêm tư duy xử lý tình huống linh hoạt hơn khi gặp các sự cố bất ngờ trong quá trình vận hành hạ tầng đám mây.
