@@ -69,7 +69,7 @@ Chuẩn hóa và tự động hóa hệ thống mang lại giá trị thực t�
 
 #### Kiến trúc tổng thể
 
-![Kiến trúc EDMS](../../images/2-Proposal/edms_architecture.jpg)
+![Kiến trúc EDMS](../../images/2-Proposal/edms_architecture.png)
 
 Kiến trúc triển khai hoàn toàn serverless:
 
