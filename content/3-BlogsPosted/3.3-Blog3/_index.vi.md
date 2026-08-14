@@ -44,4 +44,4 @@ Tài liệu giờ đây trở thành một phần của CI/CD Pipeline. Khi Dev 
 Thành phố Hồ Chí Minh, tháng 8 năm 2026
 Huỳnh Minh Quân
 
-[Blog link at AWS Study Group](https://www.facebook.com/groups/awsstudygroupfcj/multi_permalinks/2234417337323226/)
+[Blog link at AWS Study Group](https://www.facebook.com/groups/awsstudygroupfcj/permalink/2234417337323226/?rdid=U4CTyARleZL1jBz4#)

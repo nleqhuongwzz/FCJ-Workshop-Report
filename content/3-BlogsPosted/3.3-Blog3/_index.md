@@ -44,4 +44,4 @@ Documentation now becomes part of the CI/CD Pipeline. When a Developer merges co
 Ho Chi Minh City, August 2026
 Huynh Minh Quan
 
-[Blog link at AWS Study Group](https://www.facebook.com/groups/awsstudygroupfcj/multi_permalinks/2234417337323226/)
+[Blog link at AWS Study Group](https://www.facebook.com/groups/awsstudygroupfcj/permalink/2234417337323226/?rdid=U4CTyARleZL1jBz4#)
