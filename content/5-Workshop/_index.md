@@ -5,27 +5,37 @@ weight: 5
 chapter: false
 pre: " <b> 5. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
-{{% /notice %}}
 
-# Secure Hybrid Access to S3 using VPC Endpoints
+# Serverless Document Management with EDMS - Document Platform
 
-#### Overview
+### Overview
 
-**AWS PrivateLink** provides private connectivity to AWS services from VPCs and your on-premises networks, without exposing your traffic to the Public Internet.
+This workshop guides you through the entire process of building, developing, and operating **EDMS (Enterprise Document Collaboration Platform)** - a document management and collaboration application - on the Amazon Web Services (AWS) platform. The project employs a modern Cloud & DevOps model, featuring a fully automated CI/CD pipeline and a comprehensive serverless architecture.
 
-In this lab, you will learn how to create, configure, and test VPC endpoints that enable your workloads to reach AWS services without traversing the Public Internet.
+The workshop is divided into key stages:
 
-You will create two types of endpoints to access Amazon S3: a Gateway VPC endpoint, and an Interface VPC endpoint. These two types of VPC endpoints offer different benefits depending on if you are accessing Amazon S3 from the cloud or your on-premises location
-+ **Gateway** - Create a gateway endpoint to send traffic to Amazon S3 or DynamoDB using private IP addresses.You route traffic from your VPC to the gateway endpoint using route tables.
-+ **Interface** - Create an interface endpoint to send traffic to endpoint services that use a Network Load Balancer to distribute traffic. Traffic destined for the endpoint service is resolved using DNS.
+- **Infrastructure**: Setting up the AWS service foundation (S3, Aurora, IAM, Cognito)
+- **Deployment**: Building a CI/CD pipeline using GitHub Actions and deploying the application to Lambda + API Gateway
+- **Operations**: Configuring auto-scaling, monitoring, cost alerts, and end-to-end testing
+- **Illustrations**: Reference list of all screenshots used in the workshop
 
-#### Content
+### Architecture Summary
 
-1. [Workshop overview](5.1-Workshop-overview)
-2. [Prerequiste](5.2-Prerequiste/)
-3. [Access S3 from VPC](5.3-S3-vpc/)
-4. [Access S3 from On-premises](5.4-S3-onprem/)
-5. [VPC Endpoint Policies (Bonus)](5.5-Policy/)
-6. [Clean up](5.6-Cleanup/)
+The system is organized into the following main layers:
+
+| Layer | Components |
+|-------|------------|
+| CI/CD | GitHub Actions, OIDC, AWS STS, AWS SAM / CloudFormation |
+| Presentation | AWS Amplify (React Frontend) |
+| Application | Amazon API Gateway, AWS Lambda (Spring Boot) |
+| Data | Amazon Aurora MySQL, Amazon S3 |
+| Workflow | AWS Step Functions, Amazon SNS |
+| Monitoring | Amazon CloudWatch, AWS Budgets |
+
+### Contents
+
+1. [Introduction](5.1-Workshop-overview/)
+2. [Prerequisites](5.2-Prerequisite/)
+3. [Design and Build EDMS Infrastructure on AWS](5.3-Edms-infrastructure/)
+4. [Deploying EDMS on AWS](5.4-Edms-deployment/)
+5. [Testing, Operations, and Continuous Deployment](5.5-Edms-operations/)
