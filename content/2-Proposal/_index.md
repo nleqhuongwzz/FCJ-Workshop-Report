@@ -69,7 +69,7 @@ System standardization and automation deliver practical value:
 
 #### Overall Architecture
 
-![EDMS System Architecture](images/2-Proposal/edms_architecture.jpg)
+![EDMS System Architecture](../images/2-Proposal/edms_architecture.jpg)
 
 The deployment architecture is fully serverless:
 
