@@ -64,7 +64,7 @@ pre: " <b> 4.1. </b> "
 Attending the "Cloud Architect - Grand Finale" event was an invaluable and practical learning experience. Witnessing firsthand the intense competition and sharp problem-solving mindsets of the teams inside the modern Bitexco setting gave me a realistic perspective on how large-scale systems are built and operated. The deep dives into SLAs and Monitoring by experts helped me systemize my foundational operational knowledge, while further inspiring me to continuously improve my technical skills on the path to becoming a Cloud/DevOps engineer.
 
 #### Some photos from the event
-![Event Image](/images/4-Event/event2-1.jpg)
-![Event Image](/images/4-Event/event2-2.jpeg)
+![Event Image](../../images/4-Event/event2-1.jpg)
+![Event Image](../../images/4-Event/event2-2.jpeg)
 
 > Overall, the event not only provided technical knowledge but also helped me reshape my thinking about application design, system modernization, and cross-team collaboration.

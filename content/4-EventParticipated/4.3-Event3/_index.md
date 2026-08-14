@@ -67,7 +67,7 @@ pre: " <b> 4.2. </b> "
 - The most inspiring thing was the **Show Up. Build. Pitch.** spirit — just step up, register, and figure the rest out later. All fears about "not being skilled enough" are erased when you are put in an environment that forces you to think and break limits. Through the presentations, I not only gained countless new insights on designing Multi-Agents or handling Real-time Video Streams but also promised myself to step out of my comfort zone and participate in at least one Hackathon in the near future to gain experience and expand my own network.
 
 #### Some photos from the event
-![Event Image](/images/4-Event/event3-1.jpg)
-![Event Image](/images/4-Event/event3-2.jpg)
+![Event Image](../../images/4-Event/event3-1.jpg)
+![Event Image](../../images/4-Event/event3-2.jpg)
 
 > Overall, the event not only provided technical knowledge but also helped me reshape my thinking about application design, system modernization, and cross-team collaboration.

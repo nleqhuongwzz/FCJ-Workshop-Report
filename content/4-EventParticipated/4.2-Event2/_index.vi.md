@@ -64,7 +64,7 @@ pre: " <b> 4.1. </b> "
 Tham gia sự kiện "Cloud Architect - Trận Chung Kết" là một trải nghiệm học hỏi vô cùng giá trị và thiết thực. Được trực tiếp chứng kiến màn so tài căng thẳng, tư duy xử lý vấn đề sắc bén của các đội thi tại không gian hiện đại của Bitexco đã mang lại cho em góc nhìn thực tế về cách một hệ thống lớn được xây dựng và vận hành. Các phần chia sẻ chuyên sâu về SLA và Monitoring từ các chuyên gia giúp em hệ thống hóa lại kiến thức nền tảng, đồng thời tiếp thêm động lực lớn để em tiếp tục nỗ lực hoàn thiện kỹ năng chuyên môn trên con đường trở thành kỹ sư Cloud/DevOps trong tương lai.
 
 #### Một số hình ảnh khi tham gia sự kiện
-![Event Image](/images/4-Event/event2-1.jpg)
-![Event Image](/images/4-Event/event2-2.jpeg)
+![Event Image](../../../images/4-Event/event2-1.jpg)
+![Event Image](../../../images/4-Event/event2-2.jpeg)
 
 > Tổng thể, sự kiện không chỉ cung cấp kiến thức kỹ thuật mà còn giúp tôi thay đổi cách tư duy về thiết kế ứng dụng, hiện đại hóa hệ thống và phối hợp hiệu quả hơn giữa các team.

@@ -19,7 +19,6 @@ Throughout my internship at the company, I participated in three main events; ea
 
 &emsp;**Role:** Attendee  
 
----
 
 ### [Event 2](4.2-Event2/)  
 &emsp;**Event Name:** Cloud Architect  
@@ -30,9 +29,8 @@ Throughout my internship at the company, I participated in three main events; ea
 
 &emsp;**Role:** Attendee  
 
----
 
-### [Event 2](4.3-Event3/)  
+### [Event 3](4.3-Event3/)  
 &emsp;**Event Name:** FCAJ x Agentic AI Build Week: Show Up. Build. Pitch. WIN!  
 
 &emsp;**Date & Time:** 09:00, July 25, 2026 

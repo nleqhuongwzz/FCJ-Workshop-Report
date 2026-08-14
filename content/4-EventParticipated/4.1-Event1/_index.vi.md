@@ -6,7 +6,6 @@ chapter: false
 pre: " <b> 4.1. </b> "
 ---
 
-
 # Bài thu hoạch “Enterprise Cloud Architectures and Industry Applications”
 
 ### Mục Đích Của Sự Kiện
@@ -60,19 +59,23 @@ Các phiên trình bày và chia sẻ được dẫn dắt bởi đội ngũ chu
 
 ### 5. Sử dụng AI Đúng cách, Nền tảng Vững chắc và Tư duy Đi làm (Anh Khang Nguyễn)
 
-- **Sử dụng AI Tỉnh táo:** Cảnh báo tình trạng lạm dụng AI để giải quyết bài tập thay vì tư duy độc lập. Đưa ra thông điệp sâu sắc: *"Bạn có thể thuê ngoài tư duy (Outsource thinking) nhưng không thể thuê ngoài sự thấu hiểu (Understanding)"*.
+- **Sử dụng AI Tỉnh táo:** Cảnh báo tình trạng lạm dụng AI để giải quyết bài tập thay vì tư duy độc lập. Đưa ra thông điệp sâu sắc: _"Bạn có thể thuê ngoài tư duy (Outsource thinking) nhưng không thể thuê ngoài sự thấu hiểu (Understanding)"_.
 - **Tầm quan trọng của Nền tảng (Foundation):** Nhấn mạnh các kiến thức nền tảng cốt lõi về mạng máy tính (Networking) và bảo mật là yếu tố sống còn cho lộ trình phát triển lâu dài trên nền tảng Cloud.
 - **Tư duy Làm việc Hiệu quả:** Khuyên nhân sự trẻ nên duy trì thói quen đặt câu hỏi phản biện ("Question everything"), học hỏi từ sai lầm và giữ vững tinh thần "Stay Hungry" để luôn vượt qua kỳ vọng của tổ chức.
 - **Đánh giá Công việc qua 3 Vòng tròn:** Chia sẻ mô hình đánh giá gồm Đam mê, Trách nhiệm và Lợi ích. Đối với người mới bắt đầu, "Lợi ích" không chỉ giới hạn ở mức lương tài chính mà còn bao gồm kinh nghiệm thực chiến, mạng lưới quan hệ và tốc độ phát triển bản thân.
 
 ## Những gì tôi học được
+
 Sự kiện đã mang lại cho tôi những góc nhìn toàn diện và thực tế về bức tranh toàn cảnh của ngành điện toán đám mây và dữ liệu tại Việt Nam. Tôi nhận thức rõ ràng rằng việc nắm vững kiến thức nền tảng (Networking, Security) là điều kiện cần, trong khi tư duy giải quyết bài toán kinh doanh và tinh thần chủ động học hỏi là điều kiện đủ để sinh viên tồn tại và phát triển trong môi trường cạnh tranh khốc liệt. Những chia sẻ về mô hình Data DNA, cấu trúc hạ tầng AWS, cũng như cách thức tích hợp AI vào công việc hàng ngày đã giúp tôi định hình rõ hơn lộ trình phát triển kỹ năng kỹ thuật. Hơn thế nữa, những bài học về việc xây dựng thương hiệu cá nhân (Visibility), kỹ năng giao tiếp, quản lý nỗi sợ và giữ vững sự kiên trì từ các diễn giả là hành trang quý giá để tôi tự tin bước vào thị trường lao động doanh nghiệp trong tương lai.
 
 ## Kinh nghiệm đúc kết từ sự kiện
+
 Tham gia buổi study tour và hội thảo này là một trải nghiệm vô cùng giá trị, giúp tôi thu hẹp đáng kể khoảng cách giữa giảng đường đại học và thực tế doanh nghiệp. Việc được lắng nghe trực tiếp những câu chuyện thật, bài học thật từ các cựu sinh viên và các chuyên gia hàng đầu tại các tập đoàn công nghệ lớn đã giúp tôi điều chỉnh lại thái độ học tập và phương pháp tiếp cận công việc: không phụ thuộc hoàn toàn vào AI, luôn đặt câu hỏi phản biện, coi trọng trải nghiệm thực tế và giữ vững tinh thần "Stay Hungry". Sự kiện không chỉ bồi đắp kiến thức chuyên môn vững chắc mà còn truyền cảm hứng mạnh mẽ về tinh thần cống hiến, sẻ chia trong cộng đồng công nghệ trẻ.
 
 #### Một số hình ảnh khi tham gia sự kiện
-![Event Image](/images/4-Event/event1-1.jpg)
-![Event Image](/images/4-Event/event1-2.jpg)
+
+![Event Image](../../../images/4-Event/event1-1.jpg)
+![Event Image](../../../images/4-Event/event1-2.jpg)
+![Event Image](../../images/4-Event/event1-3.jpg)
 
 > Tổng thể, sự kiện không chỉ cung cấp kiến thức kỹ thuật mà còn giúp tôi thay đổi cách tư duy về thiết kế ứng dụng, hiện đại hóa hệ thống và phối hợp hiệu quả hơn giữa các team.

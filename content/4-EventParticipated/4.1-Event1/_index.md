@@ -74,7 +74,8 @@ The event provided me with a comprehensive and practical view of the cloud compu
 Attending this study tour and seminar was an immensely valuable experience, helping me significantly narrow the gap between university lecture halls and corporate realities. Listening directly to real stories and lessons from alumni and top experts at major technology corporations allowed me to adjust my learning attitude and approach to work: not relying entirely on AI, always asking critical questions, valuing practical experience, and maintaining a "Stay Hungry" spirit. The event not only reinforced my solid technical expertise but also strongly inspired a spirit of dedication and sharing within the young tech community.
 
 #### Some photos from the event
-![Event Image](/images/4-Event/event1-1.jpg)
-![Event Image](/images/4-Event/event1-2.jpg)
+![Event Image](../../images/4-Event/event1-1.jpg)
+![Event Image](../../images/4-Event/event1-2.jpg)
+![Event Image](../../images/4-Event/event1-3.jpg)
 
 > Overall, the event not only provided technical knowledge but also helped me reshape my thinking about application design, system modernization, and cross-team collaboration.

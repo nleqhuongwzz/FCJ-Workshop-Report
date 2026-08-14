@@ -76,7 +76,7 @@ pre: " <b> 4.2. </b> "
 - Điều truyền cảm hứng nhất là tinh thần **Show Up. Build. Pitch** — cứ dấn thân, đăng ký đi rồi tính tiếp. Mọi nỗi sợ về việc "trình độ chưa đủ" đều bị xóa nhòa khi bạn được đưa vào một môi trường buộc phải tư duy và bứt phá giới hạn. Thông qua các phần trình bày, tôi không chỉ nạp thêm được vô số kiến thức mới về cách thiết kế Multi-Agent hay xử lý Real-time Video Stream, mà còn tự hứa với bản thân sẽ bước ra khỏi vùng an toàn, tham gia ít nhất một giải Hackathon trong thời gian tới để cọ xát và mở rộng network của chính mình.
 
 #### Một số hình ảnh khi tham gia sự kiện
-![Event Image](/images/4-Event/event3-1.jpg)
-![Event Image](/images/4-Event/event3-2.jpg)
+![Event Image](../../../images/4-Event/event3-1.jpg)
+![Event Image](../../../images/4-Event/event3-2.jpg)
 
 > Tổng thể, sự kiện không chỉ cung cấp kiến thức kỹ thuật mà còn giúp tôi thay đổi cách tư duy về thiết kế ứng dụng, hiện đại hóa hệ thống và phối hợp hiệu quả hơn giữa các team.
