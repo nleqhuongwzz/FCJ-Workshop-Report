@@ -6,35 +6,91 @@ chapter : false
 pre : " <b> 5.5.7 </b> "
 ---
 
-To avoid ongoing costs, delete every resource you created in this workshop. Follow the order below so that dependent resources are removed first.
+To avoid ongoing costs, delete every resource you created in this workshop. Follow the order below so that dependent resources are removed first — delete the backend stack first, then the manually-created services, and finally verify that nothing is left running.
 
 ### 5.5.7.1 Delete the SAM / CloudFormation stack
 
-The Lambda, API Gateway, Step Functions, and IAM resources created by SAM can be removed with one command. Run it from the folder containing your `template.yaml`:
+The Lambda, API Gateway, Step Functions, and IAM resources created by SAM are all removed by deleting the CloudFormation stack. There are two ways:
+
+**Option A — AWS CLI (quickest):**
+
+Open a terminal in the folder containing your `template.yaml` and run:
 
 ```bash
 sam delete --stack-name edms-lambda-stack --no-prompts
 ```
 
-This command also deletes the **CloudFormation stack** and the artifacts (Lambda layers, code bundles) stored in the deployment bucket it created.
+This command:
++ Deletes the **CloudFormation stack** (`edms-lambda-stack`).
++ Deletes the **Lambda function** and its code.
++ Deletes the **API Gateway** REST API.
++ Deletes the **Step Functions** state machine.
++ Deletes the **IAM roles** created by SAM.
++ Deletes the **artifacts** (code bundles) stored in the SAM deployment bucket.
 
-> **Note:** You can achieve the same result in the console by opening **CloudFormation** → select the stack → **Delete**. Confirm the stack status changes to `DELETE_COMPLETE`.
+**Option B — AWS Console:**
 
-![Figure 53. Delete stack](/images/5-Workshop/5.5-Edms-operations/delete-stack.png)
+1. Open the **CloudFormation console**.
+2. Select the stack **`edms-lambda-stack`**.
+3. Click **Delete**.
+4. AWS asks you to confirm — click **Delete stack**.
+5. Wait until the stack status changes from `DELETE_IN_PROGRESS` to **`DELETE_COMPLETE`**.
+
+> **Note:** If the stack fails to delete (e.g. an S3 bucket is not empty), check the **Events** tab for the error, fix the blocking resource, and try again.
 
 ### 5.5.7.2 Delete remaining resources manually
 
-The following were created outside SAM, so delete them in the console:
+The following services were created **outside SAM**, so you must delete them individually in the console. Do them in this order:
 
-1. **Amplify** — delete the app from the Amplify console.
-2. **Step Functions** — delete the state machine.
-3. **SNS** — delete the `edms-notifications` topic (and any subscriptions).
-4. **Cognito** — delete the User Pool (and the app client).
-5. **S3** — **empty** and delete the buckets, including any **object versions** and lifecycle policies.
-6. **Aurora** — **delete the cluster**; this is the main source of cost, so do not skip it.
-7. **IAM** — delete the deploy role, after removing any CloudFormation stack that still references it.
+**1. Delete the S3 bucket (do this before Cognito/Aurora, since it stores files)**
 
-![Figure 54. Delete resources](/images/5-Workshop/5.5-Edms-operations/delete-resources.png)
+1. Open the **S3 console**.
+2. Select the `edms-docs-bucket-...` bucket.
+3. Click **Empty** → type `permanently delete` → confirm. This removes all objects **and** any object versions (otherwise the bucket cannot be deleted).
+4. Back in the bucket list, select the bucket → **Delete** → type the bucket name → confirm.
+
+**2. Delete the Aurora cluster (the main source of cost)**
+
+1. Open the **RDS console** → **Databases**.
+2. Select the cluster **`edms-cluster`**.
+3. Click **Actions** → **Delete**.
+4. Uncheck **Create final snapshot** (unless you want a backup).
+5. **Important:** check **"I acknowledge that I will lose..."** and **disable delete protection** if it is enabled (you turned it on in 5.3.2).
+6. Click **Delete**. Wait for the status to become `DELETED`.
+
+> **Note:** Aurora charges even when stopped, so it is important to **delete** (not just stop) the cluster when you are finished.
+
+**3. Delete the Cognito User Pool**
+
+1. Open the **Cognito console** → **User pools**.
+2. Select **`edms-user-pool`**.
+3. Click **Delete**.
+4. Confirm — this removes the pool, the app client, and all users.
+
+**4. Delete the Step Functions state machine**
+
+1. Open the **Step Functions console** → **State machines**.
+2. Select **`DocumentApprovalStateMachine`**.
+3. Click **Delete** → confirm. (Any running executions are aborted.)
+
+**5. Delete the SNS topic**
+
+1. Open the **SNS console** → **Topics**.
+2. Select **`edms-notifications`**.
+3. Click **Delete** → confirm. This also removes its subscriptions (the email subscription).
+
+**6. Delete the AWS Amplify app (the frontend)**
+
+1. Open the **Amplify console** → **All apps**.
+2. Select the app.
+3. Click **Actions** → **Delete app**.
+4. Type `delete` to confirm. This removes the deployed frontend and the Amplify domain URL.
+
+**7. Delete the IAM roles**
+
+1. Open the **IAM console** → **Roles**.
+2. Delete **`github-actions-deploy-role`** and **`edms-lambda-role`** (after the CloudFormation stack is gone, they are no longer needed).
+3. Also delete the **OIDC provider** (`token.actions.githubusercontent.com`) in **IAM → Identity providers** if you no longer need it.
 
 ### 5.5.7.3 Verify zero cost
 
@@ -42,4 +98,4 @@ The following were created outside SAM, so delete them in the console:
 2. Confirm no service is still incurring charges for your account.
 3. (Optional) Set a **$0 budget** alert so you are notified by email if anything still generates cost.
 
-> **Best practice:** After cleanup, confirm the **CloudFormation stack list**, **Amplify apps**, and **EC2/RDS** listings are all empty so you do not leave a running bill. Budget data lags up to 24 hours, so re-check the next day.
+> **Best practice:** After cleanup, confirm the **CloudFormation stack list**, **Amplify apps**, and **RDS databases** listings are all empty so you do not leave a running bill. Budget data lags up to 24 hours, so re-check the next day.

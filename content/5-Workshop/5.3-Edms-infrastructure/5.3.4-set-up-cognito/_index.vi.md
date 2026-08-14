@@ -16,30 +16,31 @@ Amazon Cognito cung cấp xác thực và phân quyền theo vai trò cho EDMS. 
 ### 5.3.4.2 Tạo User Pool
 
 1. Bấm **Create user pool**.
-![Figure 11. Tạo user pool](/images/5-Workshop/5.3-Edms-infrastructure/create-userpool.png)
+![Figure 11. Tạo user pool](../../../../images/5-Workshop/5.3-Edms-infrastructure/create-userpool.png)
 
+2. Trong trang **Set up resources for your application**, cấu hình:
 
-2. Trong **Configure sign-in experience**:
-+ **Sign-in options:** chọn **Email**.
-+ Bấm **Next**.
-3. Trong **Configure security requirements**:
-+ Đặt **password policy** (tối thiểu 8 ký tự, yêu cầu ít nhất một chữ số).
-+ Bấm **Next**.
-4. Trong **Configure sign-up experience**:
-+ Giữ **Self-service sign-up** được bật (hoặc tắt nếu bạn chỉ muốn admin tạo tài khoản).
-+ Bấm **Next**.
-5. Trong **Configure message delivery**:
-+ Chọn **Send email with Cognito**.
-+ Bấm **Next**.
-6. Trong **Integrate your app**:
-+ **User pool name:** `edms-user-pool`.
-+ **App client name:** `edms-client`; **bỏ tick "Generate a client secret"** — backend cần client công khai cho luồng đăng nhập.
-+ Bấm **Next**.
-7. Xem lại cấu hình và bấm **Create user pool**.
+**Define your application**
++ **Application type:** chọn **Single-page application (SPA)** — EDMS là một React SPA. (Có các lựa chọn Traditional web app, Mobile, Machine-to-machine.)
++ **Name your application:** `edms-client`.
 
-![Figure 12. User pool đã tạo](/images/5-Workshop/5.3-Edms-infrastructure/userpool-created.png)
+**Configure options**
 
-> **Ghi chú:** App client **không có secret** để dùng được trong các luồng chạy trên trình duyệt. Không bật client secret cho client công khai này.
+*Options for sign-in identifiers*
++ Chọn **Email** làm sign-in identifier (người dùng đăng nhập bằng email và mật khẩu).
+
+*Self-registration*
++ **Enable self-registration:** để **tắt** nếu bạn chỉ muốn admin tạo tài khoản (khuyến nghị cho công cụ doanh nghiệp nội bộ). Nếu muốn mở đăng ký công khai thì bật lên.
++ **Required attributes for sign-up:** nếu bật self-registration, chọn **Email** làm thuộc tính bắt buộc.
+
+*Add a return URL (tùy chọn)*
++ **Return URL:** để phát triển local bạn có thể nhập `http://localhost:3000`. Trong production, đặt URL **Amplify** của bạn (ví dụ `https://main.d3xxxx.amplifyapp.com`). Cognito sẽ redirect về đây sau khi đăng nhập thành công.
+
+3. Bấm **Create user directory**.
+
+![Figure 12. User pool đã tạo](../../../../images/5-Workshop/5.3-Edms-infrastructure/userpool-created.png)
+
+> **Ghi chú:** Với luồng console mới của Cognito, user pool và app client được tạo cùng nhau. **App client không có secret** để dùng được trong các luồng chạy trên trình duyệt (SPA).
 
 ### 5.3.4.3 Tạo các nhóm (vai trò)
 
@@ -52,7 +53,7 @@ Các Cognito group ánh xạ trực tiếp tới vai trò ứng dụng (`ADMIN` 
 + `MANAGER`
 + `USER`
 
-![Figure 13. Groups](/images/5-Workshop/5.3-Edms-infrastructure/groups.png)
+![Figure 13. Groups](../../../../images/5-Workshop/5.3-Edms-infrastructure/groups.png)
 
 4. Gán người dùng vào các nhóm. Người dùng trong một nhóm kế thừa vai trò của nhóm đó trong ứng dụng.
 

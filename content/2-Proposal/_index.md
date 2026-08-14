@@ -85,44 +85,44 @@ The deployment architecture is fully serverless:
 
 #### Architecture Components
 
-| AWS Service            | Service Type                 | Role & Function in the System                                                                                     |
-| ---------------------- | ---------------------------- | ----------------------------------------------------------------------------------------------------------------- |
-| **AWS IAM**            | Identity & Access Management | Manages users, groups, roles, and security policies; used for the Lambda execution role and the OIDC deploy role. |
-| **AWS Lambda**         | Serverless Compute           | Runs the Spring Boot (Java 17) backend monolith.                                                                  |
-| **Amazon API Gateway** | API Gateway                  | Exposes the backend as a REST API and routes requests to Lambda.                                                  |
-| **Amazon Cognito**     | Authentication               | Provides sign-in and role-based authorization via JWT.                                                            |
-| **Amazon Aurora**      | Relational Database          | Stores relational metadata (MySQL-compatible).                                                                    |
-| **Amazon S3**          | Object Storage               | Stores original document files, accessed via pre-signed URLs.                                                     |
-| **AWS Step Functions** | Workflow Orchestration       | Orchestrates the document approval workflow (waitForTaskToken).                                                   |
-| **Amazon SNS**         | Notification Service         | Sends email notifications on approve/reject.                                                                      |
-| **AWS Amplify**        | Frontend Hosting             | Hosts the React frontend over HTTPS.                                                                              |
-| **Amazon CloudWatch**  | Monitoring & Observability   | Collects logs and metrics, and configures dashboards and alarms.                                                  |
+| AWS Service | Service Type | Role & Function in the System |
+| ----------- | ------------ | ----------------------------- |
+| **AWS IAM** | Identity & Access Management | Manages users, groups, roles, and security policies; used for the Lambda execution role and the OIDC deploy role. |
+| **AWS Lambda** | Serverless Compute | Runs the Spring Boot (Java 17) backend monolith. |
+| **Amazon API Gateway** | API Gateway | Exposes the backend as a REST API and routes requests to Lambda. |
+| **Amazon Cognito** | Authentication | Provides sign-in and role-based authorization via JWT. |
+| **Amazon Aurora** | Relational Database | Stores relational metadata (MySQL-compatible). |
+| **Amazon S3** | Object Storage | Stores original document files, accessed via pre-signed URLs. |
+| **AWS Step Functions** | Workflow Orchestration | Orchestrates the document approval workflow (waitForTaskToken). |
+| **Amazon SNS** | Notification Service | Sends email notifications on approve/reject. |
+| **AWS Amplify** | Frontend Hosting | Hosts the React frontend over HTTPS. |
+| **Amazon CloudWatch** | Monitoring & Observability | Collects logs and metrics, and configures dashboards and alarms. |
 
 #### AWS Well-Architected Framework
 
-| Pillar                 | Applied Solution                                                                    |
-| ---------------------- | ----------------------------------------------------------------------------------- |
-| Operational Excellence | GitHub Actions CI/CD, AWS SAM / CloudFormation, CloudWatch.                         |
-| Security               | IAM Least Privilege, Cognito auth, private S3 bucket, no AWS keys in GitHub (OIDC). |
-| Reliability            | Serverless managed services, Step Functions retries, CloudWatch monitoring.         |
-| Performance Efficiency | Lambda + API Gateway auto scaling, S3 + pre-signed URLs.                            |
-| Cost Optimization      | Pay-as-you-go serverless, stop/delete Aurora when idle.                             |
-| Sustainability         | Scale on demand; only pay for actual usage.                                         |
+| Pillar | Applied Solution |
+| ------ | ---------------- |
+| Operational Excellence | GitHub Actions CI/CD, AWS SAM / CloudFormation, CloudWatch. |
+| Security | IAM Least Privilege, Cognito auth, private S3 bucket, no AWS keys in GitHub (OIDC). |
+| Reliability | Serverless managed services, Step Functions retries, CloudWatch monitoring. |
+| Performance Efficiency | Lambda + API Gateway auto scaling, S3 + pre-signed URLs. |
+| Cost Optimization | Pay-as-you-go serverless, stop/delete Aurora when idle. |
+| Sustainability | Scale on demand; only pay for actual usage. |
 
 ---
 
 ### 4. Timeline & Milestones
 
-| Phase                           | Duration                | Main Tasks                                                                                                                  |
-| ------------------------------- | ----------------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| **Week 1: Research & Design**   | 22/06/2026 - 26/06/2026 | - Explore AWS Foundations (Global Infrastructure, IAM, EC2, S3). <br> - Design the system architecture and data flow.       |
-| **Week 2: Storage & Security**  | 29/06/2026 - 03/07/2026 | - Learn Amazon S3, IAM, and Git. <br> - Practice S3 + IAM + Git.                                                            |
-| **Week 3: Database & Design**   | 06/07/2026 - 10/07/2026 | - Learn Aurora MySQL and design the EDMS data model. <br> - Create S3, Aurora, IAM, Cognito.                                |
-| **Week 4: Backend Development** | 13/07/2026 - 17/07/2026 | - Set up Spring Boot backend. <br> - Implement Cognito auth + JWT. <br> - Implement document and folder CRUD.               |
-| **Week 5: Backend Advanced**    | 20/07/2026 - 24/07/2026 | - Implement permissions, versioning, tags, search, sharing, dashboard. <br> - Write unit tests.                             |
-| **Week 6: Approval Workflow**   | 27/07/2026 - 31/07/2026 | - Learn Step Functions (waitForTaskToken). <br> - Create SNS topic. <br> - Build the approval state machine.                |
-| **Week 7: CI/CD & Deploy**      | 03/08/2026 - 07/08/2026 | - Package backend as Lambda (SAM). <br> - Configure OIDC + GitHub secrets. <br> - Write GitHub Actions workflow and deploy. |
-| **Week 8: Hosting & Go-Live**   | 10/08/2026 - 15/08/2026 | - Host frontend on Amplify. <br> - Run end-to-end tests. <br> - Finalize the report and demo.                               |
+| Phase | Duration | Main Tasks |
+| ----- | -------- | ---------- |
+| **Week 1: Research & Design** | 22/06/2026 - 26/06/2026 | - Explore AWS Foundations (Global Infrastructure, IAM, EC2, S3). <br> - Design the system architecture and data flow. |
+| **Week 2: Storage & Security** | 29/06/2026 - 03/07/2026 | - Learn Amazon S3, IAM, and Git. <br> - Practice S3 + IAM + Git. |
+| **Week 3: Database & Design** | 06/07/2026 - 10/07/2026 | - Learn Aurora MySQL and design the EDMS data model. <br> - Create S3, Aurora, IAM, Cognito. |
+| **Week 4: Backend Development** | 13/07/2026 - 17/07/2026 | - Set up Spring Boot backend. <br> - Implement Cognito auth + JWT. <br> - Implement document and folder CRUD. |
+| **Week 5: Backend Advanced** | 20/07/2026 - 24/07/2026 | - Implement permissions, versioning, tags, search, sharing, dashboard. <br> - Write unit tests. |
+| **Week 6: Approval Workflow** | 27/07/2026 - 31/07/2026 | - Learn Step Functions (waitForTaskToken). <br> - Create SNS topic. <br> - Build the approval state machine. |
+| **Week 7: CI/CD & Deploy** | 03/08/2026 - 07/08/2026 | - Package backend as Lambda (SAM). <br> - Configure OIDC + GitHub secrets. <br> - Write GitHub Actions workflow and deploy. |
+| **Week 8: Hosting & Go-Live** | 10/08/2026 - 15/08/2026 | - Host frontend on Amplify. <br> - Run end-to-end tests. <br> - Finalize the report and demo. |
 
 ---
 
@@ -130,18 +130,18 @@ The deployment architecture is fully serverless:
 
 The system makes maximum use of the **AWS Free Tier** and **Serverless Pay-As-You-Go** model, paying only for the resources actually used.
 
-| AWS Service                   | Estimated Usage / Phase                       | Estimated Cost (USD)             |
-| ----------------------------- | --------------------------------------------- | -------------------------------- |
-| **AWS Lambda**                | Spring Boot monolith, invoked via API Gateway | **~$0 - $5**                     |
-| **Amazon API Gateway**        | REST API requests                             | **~$0 - $1**                     |
-| **Amazon Aurora MySQL**       | Relational metadata database                  | **~$5 - $15** (main cost driver) |
-| **Amazon S3**                 | Document storage + pre-signed URLs            | **~$1 - $3**                     |
-| **Amazon Cognito**            | User pool (free tier)                         | **~$0**                          |
-| **AWS Step Functions**        | Approval workflow executions                  | **~$0 - $2**                     |
-| **Amazon SNS**                | Email notifications (free tier)               | **~$0**                          |
-| **AWS Amplify**               | Frontend hosting                              | **~$1 - $3**                     |
-| **Amazon CloudWatch**         | Logs and metrics                              | **~$1 - $3**                     |
-| **Estimated total per month** |                                               | **~$8 - $30**                    |
+| AWS Service | Estimated Usage / Phase | Estimated Cost (USD) |
+| ----------- | ----------------------- | -------------------- |
+| **AWS Lambda** | Spring Boot monolith, invoked via API Gateway | **~$0 - $5** |
+| **Amazon API Gateway** | REST API requests | **~$0 - $1** |
+| **Amazon Aurora MySQL** | Relational metadata database | **~$5 - $15** (main cost driver) |
+| **Amazon S3** | Document storage + pre-signed URLs | **~$1 - $3** |
+| **Amazon Cognito** | User pool (free tier) | **~$0** |
+| **AWS Step Functions** | Approval workflow executions | **~$0 - $2** |
+| **Amazon SNS** | Email notifications (free tier) | **~$0** |
+| **AWS Amplify** | Frontend hosting | **~$1 - $3** |
+| **Amazon CloudWatch** | Logs and metrics | **~$1 - $3** |
+| **Estimated total per month** | | **~$8 - $30** |
 
 In addition, the proposal applies cost optimization measures such as:
 
@@ -156,15 +156,15 @@ In addition, the proposal applies cost optimization measures such as:
 
 #### Risk Matrix
 
-| Risk                                      | Likelihood | Impact    |
-| ----------------------------------------- | ---------- | --------- |
-| AWS costs exceed forecast (mainly Aurora) | Medium     | Medium    |
-| Lambda cold start latency                 | Medium     | Low       |
-| Approval workflow failure                 | Low        | Medium    |
-| Sensitive information exposure            | Low        | Very High |
-| Sudden traffic spike                      | Medium     | Low       |
-| Insufficient logs or alerts               | Medium     | Medium    |
-| Error during new version deployment       | Medium     | Medium    |
+| Risk | Likelihood | Impact |
+| ---- | ---------- | ------ |
+| AWS costs exceed forecast (mainly Aurora) | Medium | Medium |
+| Lambda cold start latency | Medium | Low |
+| Approval workflow failure | Low | Medium |
+| Sensitive information exposure | Low | Very High |
+| Sudden traffic spike | Medium | Low |
+| Insufficient logs or alerts | Medium | Medium |
+| Error during new version deployment | Medium | Medium |
 
 #### Contingency and Response Plan
 

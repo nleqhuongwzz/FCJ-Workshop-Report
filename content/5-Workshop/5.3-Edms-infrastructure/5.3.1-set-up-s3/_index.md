@@ -22,7 +22,7 @@ Amazon S3 stores the original document files of EDMS. Because files are accessed
 + **Bucket Versioning:** enable it (supports document version history).
 + **Tags (optional):** add a tag such as `Project=EDMS`.
 4. Scroll down and click **Create bucket**.
-![Figure 1. Create bucket](/images/5-Workshop/5.3-Edms-infrastructure/create-bucket.png)
+![Figure 1. Create bucket](../../../images/5-Workshop/5.3-Edms-infrastructure/create-bucket.png)
 
 
 ### 5.3.1.2 Verify the bucket
@@ -30,7 +30,7 @@ Amazon S3 stores the original document files of EDMS. Because files are accessed
 1. Back in the bucket list, confirm your bucket appears with status **0 objects**.
 2. Open the bucket — it should be empty and private (public access blocked).
 
-![Figure 3. Bucket created](/images/5-Workshop/5.3-Edms-infrastructure/bucket-created.png)
+![Figure 3. Bucket created](../../../images/5-Workshop/5.3-Edms-infrastructure/bucket-created.png)
 
 ### 5.3.1.3 Note the bucket name
 

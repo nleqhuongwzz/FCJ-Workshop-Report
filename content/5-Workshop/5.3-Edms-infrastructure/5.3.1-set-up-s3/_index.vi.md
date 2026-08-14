@@ -32,7 +32,7 @@ Trước khi tạo bucket, chuẩn bị:
 + **Bucket Versioning:** **bật** — hỗ trợ lịch sử phiên bản tài liệu (mỗi lần upload mới tạo một version mới thay vì ghi đè).
 + **Tags (optional):** thêm tag, ví dụ `Project=EDMS`.
 4. Bấm **Create bucket**.
-![Figure 1. Tạo bucket](/images/5-Workshop/5.3-Edms-infrastructure/create-bucket.png)
+![Figure 1. Tạo bucket](../../../../images/5-Workshop/5.3-Edms-infrastructure/create-bucket.png)
 
 
 > **Ghi chú:** Không tạo bất kỳ policy công khai nào cho bucket này. Toàn bộ quyền truy cập file được cấp tạm thời qua pre-signed URLs do backend sinh ra.
@@ -43,7 +43,7 @@ Trước khi tạo bucket, chuẩn bị:
 2. Mở bucket — nó phải **trống** và **private**.
 3. Vào tab **Permissions**, kiểm tra **Block public access (bucket settings)** hiển thị "Block all public access: On".
 
-![Figure 3. Bucket đã tạo](/images/5-Workshop/5.3-Edms-infrastructure/bucket-created.png)
+![Figure 3. Bucket đã tạo](../../../../images/5-Workshop/5.3-Edms-infrastructure/bucket-created.png)
 
 ### 5.3.1.4 Ghi lại tên bucket
 

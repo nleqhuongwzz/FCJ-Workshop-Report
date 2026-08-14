@@ -85,44 +85,44 @@ Kiến trúc triển khai hoàn toàn serverless:
 
 #### Các thành phần kiến trúc
 
-| AWS Service            | Loại dịch vụ                 | Vai trò trong hệ thống                                                                                 |
-| ---------------------- | ---------------------------- | ------------------------------------------------------------------------------------------------------ |
-| **AWS IAM**            | Identity & Access Management | Quản lý users, groups, roles, và security policies; dùng cho role thực thi Lambda và OIDC deploy role. |
-| **AWS Lambda**         | Serverless Compute           | Chạy backend monolith Spring Boot (Java 17).                                                           |
-| **Amazon API Gateway** | API Gateway                  | Phơi backend thành REST API và route request đến Lambda.                                               |
-| **Amazon Cognito**     | Xác thực                     | Cung cấp đăng nhập và phân quyền theo vai trò qua JWT.                                                 |
-| **Amazon Aurora**      | Cơ sở dữ liệu quan hệ        | Lưu metadata quan hệ (tương thích MySQL).                                                              |
-| **Amazon S3**          | Object Storage               | Lưu các file tài liệu gốc, truy cập qua pre-signed URLs.                                               |
-| **AWS Step Functions** | Điều phối Workflow           | Điều phối quy trình phê duyệt tài liệu (waitForTaskToken).                                             |
-| **Amazon SNS**         | Dịch vụ thông báo            | Gửi email khi duyệt/từ chối.                                                                           |
-| **AWS Amplify**        | Frontend Hosting             | Host frontend React qua HTTPS.                                                                         |
-| **Amazon CloudWatch**  | Giám sát & Observability     | Thu thập log và metric, cấu hình dashboards và alarms.                                                 |
+| AWS Service | Loại dịch vụ | Vai trò trong hệ thống |
+| ----------- | ------------ | ---------------------- |
+| **AWS IAM** | Identity & Access Management | Quản lý users, groups, roles, và security policies; dùng cho role thực thi Lambda và OIDC deploy role. |
+| **AWS Lambda** | Serverless Compute | Chạy backend monolith Spring Boot (Java 17). |
+| **Amazon API Gateway** | API Gateway | Phơi backend thành REST API và route request đến Lambda. |
+| **Amazon Cognito** | Xác thực | Cung cấp đăng nhập và phân quyền theo vai trò qua JWT. |
+| **Amazon Aurora** | Cơ sở dữ liệu quan hệ | Lưu metadata quan hệ (tương thích MySQL). |
+| **Amazon S3** | Object Storage | Lưu các file tài liệu gốc, truy cập qua pre-signed URLs. |
+| **AWS Step Functions** | Điều phối Workflow | Điều phối quy trình phê duyệt tài liệu (waitForTaskToken). |
+| **Amazon SNS** | Dịch vụ thông báo | Gửi email khi duyệt/từ chối. |
+| **AWS Amplify** | Frontend Hosting | Host frontend React qua HTTPS. |
+| **Amazon CloudWatch** | Giám sát & Observability | Thu thập log và metric, cấu hình dashboards và alarms. |
 
 #### AWS Well-Architected Framework
 
-| Trụ cột                | Giải pháp áp dụng                                                                                  |
-| ---------------------- | -------------------------------------------------------------------------------------------------- |
-| Operational Excellence | GitHub Actions CI/CD, AWS SAM / CloudFormation, CloudWatch.                                        |
-| Security               | IAM Least Privilege, xác thực Cognito, S3 bucket private, không dùng AWS keys trong GitHub (OIDC). |
-| Reliability            | Các dịch vụ được quản lý serverless, Step Functions retries, giám sát CloudWatch.                  |
-| Performance Efficiency | Auto scaling Lambda + API Gateway, S3 + pre-signed URLs.                                           |
-| Cost Optimization      | Serverless pay-as-you-go, stop/xóa Aurora khi idle.                                                |
-| Sustainability         | Scale theo nhu cầu; chỉ trả tiền cho mức sử dụng thực tế.                                          |
+| Trụ cột | Giải pháp áp dụng |
+| ------- | ----------------- |
+| Operational Excellence | GitHub Actions CI/CD, AWS SAM / CloudFormation, CloudWatch. |
+| Security | IAM Least Privilege, xác thực Cognito, S3 bucket private, không dùng AWS keys trong GitHub (OIDC). |
+| Reliability | Các dịch vụ được quản lý serverless, Step Functions retries, giám sát CloudWatch. |
+| Performance Efficiency | Auto scaling Lambda + API Gateway, S3 + pre-signed URLs. |
+| Cost Optimization | Serverless pay-as-you-go, stop/xóa Aurora khi idle. |
+| Sustainability | Scale theo nhu cầu; chỉ trả tiền cho mức sử dụng thực tế. |
 
 ---
 
 ### 4. Lộ trình & Mốc
 
-| Giai đoạn                            | Thời gian               | Nhiệm vụ chính                                                                                                               |
-| ------------------------------------ | ----------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| **Tuần 1: Nghiên cứu & Thiết kế**    | 22/06/2026 - 26/06/2026 | - Tìm hiểu AWS Foundations (Global Infrastructure, IAM, EC2, S3). <br> - Thiết kế kiến trúc hệ thống và luồng dữ liệu.       |
-| **Tuần 2: Lưu trữ & Bảo mật**        | 29/06/2026 - 03/07/2026 | - Học Amazon S3, IAM, và Git. <br> - Thực hành S3 + IAM + Git.                                                               |
-| **Tuần 3: Cơ sở dữ liệu & Thiết kế** | 06/07/2026 - 10/07/2026 | - Học Aurora MySQL và thiết kế mô hình dữ liệu EDMS. <br> - Tạo S3, Aurora, IAM, Cognito.                                    |
-| **Tuần 4: Phát triển Backend**       | 13/07/2026 - 17/07/2026 | - Thiết lập backend Spring Boot. <br> - Triển khai xác thực Cognito + JWT. <br> - Triển khai CRUD tài liệu và thư mục.       |
-| **Tuần 5: Backend nâng cao**         | 20/07/2026 - 24/07/2026 | - Triển khai permissions, versioning, tags, search, sharing, dashboard. <br> - Viết unit tests.                              |
-| **Tuần 6: Quy trình phê duyệt**      | 27/07/2026 - 31/07/2026 | - Học Step Functions (waitForTaskToken). <br> - Tạo SNS topic. <br> - Xây dựng state machine phê duyệt.                      |
-| **Tuần 7: CI/CD & Deploy**           | 03/08/2026 - 07/08/2026 | - Đóng gói backend thành Lambda (SAM). <br> - Cấu hình OIDC + GitHub secrets. <br> - Viết GitHub Actions workflow và deploy. |
-| **Tuần 8: Hosting & Go-Live**        | 10/08/2026 - 15/08/2026 | - Host frontend trên Amplify. <br> - Chạy kiểm thử end-to-end. <br> - Hoàn thiện báo cáo và demo.                            |
+| Giai đoạn | Thời gian | Nhiệm vụ chính |
+| --------- | --------- | -------------- |
+| **Tuần 1: Nghiên cứu & Thiết kế** | 22/06/2026 - 26/06/2026 | - Tìm hiểu AWS Foundations (Global Infrastructure, IAM, EC2, S3). <br> - Thiết kế kiến trúc hệ thống và luồng dữ liệu. |
+| **Tuần 2: Lưu trữ & Bảo mật** | 29/06/2026 - 03/07/2026 | - Học Amazon S3, IAM, và Git. <br> - Thực hành S3 + IAM + Git. |
+| **Tuần 3: Cơ sở dữ liệu & Thiết kế** | 06/07/2026 - 10/07/2026 | - Học Aurora MySQL và thiết kế mô hình dữ liệu EDMS. <br> - Tạo S3, Aurora, IAM, Cognito. |
+| **Tuần 4: Phát triển Backend** | 13/07/2026 - 17/07/2026 | - Thiết lập backend Spring Boot. <br> - Triển khai xác thực Cognito + JWT. <br> - Triển khai CRUD tài liệu và thư mục. |
+| **Tuần 5: Backend nâng cao** | 20/07/2026 - 24/07/2026 | - Triển khai permissions, versioning, tags, search, sharing, dashboard. <br> - Viết unit tests. |
+| **Tuần 6: Quy trình phê duyệt** | 27/07/2026 - 31/07/2026 | - Học Step Functions (waitForTaskToken). <br> - Tạo SNS topic. <br> - Xây dựng state machine phê duyệt. |
+| **Tuần 7: CI/CD & Deploy** | 03/08/2026 - 07/08/2026 | - Đóng gói backend thành Lambda (SAM). <br> - Cấu hình OIDC + GitHub secrets. <br> - Viết GitHub Actions workflow và deploy. |
+| **Tuần 8: Hosting & Go-Live** | 10/08/2026 - 15/08/2026 | - Host frontend trên Amplify. <br> - Chạy kiểm thử end-to-end. <br> - Hoàn thiện báo cáo và demo. |
 
 ---
 
@@ -130,18 +130,18 @@ Kiến trúc triển khai hoàn toàn serverless:
 
 Hệ thống tận dụng tối đa **AWS Free Tier** và mô hình **Serverless Pay-As-You-Go**, chỉ trả tiền cho tài nguyên thực sự dùng.
 
-| AWS Service                 | Mức sử dụng ước tính / Giai đoạn                  | Chi phí ước tính (USD)              |
-| --------------------------- | ------------------------------------------------- | ----------------------------------- |
-| **AWS Lambda**              | Backend monolith Spring Boot, gọi qua API Gateway | **~$0 - $5**                        |
-| **Amazon API Gateway**      | Các request REST API                              | **~$0 - $1**                        |
-| **Amazon Aurora MySQL**     | Cơ sở dữ liệu metadata quan hệ                    | **~$5 - $15** (nguồn chi phí chính) |
-| **Amazon S3**               | Lưu trữ tài liệu + pre-signed URLs                | **~$1 - $3**                        |
-| **Amazon Cognito**          | User pool (free tier)                             | **~$0**                             |
-| **AWS Step Functions**      | Các execution quy trình phê duyệt                 | **~$0 - $2**                        |
-| **Amazon SNS**              | Thông báo email (free tier)                       | **~$0**                             |
-| **AWS Amplify**             | Frontend hosting                                  | **~$1 - $3**                        |
-| **Amazon CloudWatch**       | Log và metric                                     | **~$1 - $3**                        |
-| **Tổng ước tính mỗi tháng** |                                                   | **~$8 - $30**                       |
+| AWS Service | Mức sử dụng ước tính / Giai đoạn | Chi phí ước tính (USD) |
+| ----------- | ------------------------------- | ---------------------- |
+| **AWS Lambda** | Backend monolith Spring Boot, gọi qua API Gateway | **~$0 - $5** |
+| **Amazon API Gateway** | Các request REST API | **~$0 - $1** |
+| **Amazon Aurora MySQL** | Cơ sở dữ liệu metadata quan hệ | **~$5 - $15** (nguồn chi phí chính) |
+| **Amazon S3** | Lưu trữ tài liệu + pre-signed URLs | **~$1 - $3** |
+| **Amazon Cognito** | User pool (free tier) | **~$0** |
+| **AWS Step Functions** | Các execution quy trình phê duyệt | **~$0 - $2** |
+| **Amazon SNS** | Thông báo email (free tier) | **~$0** |
+| **AWS Amplify** | Frontend hosting | **~$1 - $3** |
+| **Amazon CloudWatch** | Log và metric | **~$1 - $3** |
+| **Tổng ước tính mỗi tháng** | | **~$8 - $30** |
 
 Ngoài ra, proposal còn áp dụng các biện pháp tối ưu chi phí:
 
@@ -156,15 +156,15 @@ Ngoài ra, proposal còn áp dụng các biện pháp tối ưu chi phí:
 
 #### Ma trận rủi ro
 
-| Rủi ro                                    | Khả năng   | Tác động   |
-| ----------------------------------------- | ---------- | ---------- |
+| Rủi ro | Khả năng | Tác động |
+| ------ | -------- | -------- |
 | Chi phí AWS vượt dự kiến (chủ yếu Aurora) | Trung bình | Trung bình |
-| Lambda cold start latency                 | Trung bình | Thấp       |
-| Lỗi quy trình phê duyệt                   | Thấp       | Trung bình |
-| Lộ thông tin nhạy cảm                     | Thấp       | Rất cao    |
-| Lưu lượng tăng đột biến                   | Trung bình | Thấp       |
-| Thiếu log hoặc cảnh báo                   | Trung bình | Trung bình |
-| Lỗi khi triển khai phiên bản mới          | Trung bình | Trung bình |
+| Lambda cold start latency | Trung bình | Thấp |
+| Lỗi quy trình phê duyệt | Thấp | Trung bình |
+| Lộ thông tin nhạy cảm | Thấp | Rất cao |
+| Lưu lượng tăng đột biến | Trung bình | Thấp |
+| Thiếu log hoặc cảnh báo | Trung bình | Trung bình |
+| Lỗi khi triển khai phiên bản mới | Trung bình | Trung bình |
 
 #### Kế hoạch ứng phó
 

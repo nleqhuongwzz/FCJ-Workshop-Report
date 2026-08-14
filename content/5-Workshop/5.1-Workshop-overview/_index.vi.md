@@ -1,4 +1,4 @@
----
+﻿---
 title : "Giới thiệu"
 date : 2024-01-01 
 weight : 1 
@@ -20,35 +20,7 @@ Hệ thống có ba vai trò tài khoản:
 
 Sơ đồ dưới đây mô tả kiến trúc nền tảng chúng ta sẽ xây dựng:
 
-{{% mermaid %}}
-flowchart LR
-    subgraph Client["Client"]
-        U[User / Browser]
-        A[Amplify - React Frontend]
-    end
-
-    subgraph AWS["AWS Cloud"]
-        G[API Gateway]
-        L[Lambda - Spring Boot]
-        DB[(Aurora MySQL)]
-        S3[(S3 - Documents)]
-        C[Cognito - Auth]
-        SF[Step Functions - Approval]
-        SNS[SNS - Notification]
-        CW[CloudWatch]
-    end
-
-    U -->|sign-in| C
-    U --> A
-    A -->|HTTPS + JWT| G
-    G --> L
-    L -->|validate token| C
-    L <-->|read / write| DB
-    L <-->|store / get files| S3
-    L -->|submit for approval| SF
-    SF -->|notify| SNS
-    L -.->|logs / metrics| CW
-{{% /mermaid %}}
+![Kiến trúc EDMS](../../../../images/5-Workshop/5.1-Workshop-overview/architecture.png)
 
 Hệ thống bao gồm các dịch vụ sau:
 

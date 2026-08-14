@@ -16,30 +16,31 @@ Amazon Cognito provides authentication and role-based authorization for EDMS. Us
 ### 5.3.4.2 Create a User Pool
 
 1. Click **Create user pool**.
-![Figure 11. Create user pool](/images/5-Workshop/5.3-Edms-infrastructure/create-userpool.png)
+![Figure 11. Create user pool](../../../images/5-Workshop/5.3-Edms-infrastructure/create-userpool.png)
 
+2. In the **Set up resources for your application** page, configure:
 
-2. In **Configure sign-in experience**:
-+ **Sign-in options:** select **Email**.
-+ Click **Next**.
-3. In **Configure security requirements**:
-+ Set a **password policy** (minimum 8 characters, require at least one number).
-+ Click **Next**.
-4. In **Configure sign-up experience**:
-+ Keep **Self-service sign-up** enabled (or disable it if you want only admin-created users).
-+ Click **Next**.
-5. In **Configure message delivery**:
-+ Select **Send email with Cognito**.
-+ Click **Next**.
-6. In **Integrate your app**:
-+ **User pool name:** `edms-user-pool`.
-+ **App client name:** `edms-client`; **leave "Generate a client secret" unchecked** — the backend needs a public client for the sign-in flow.
-+ Click **Next**.
-7. Review the settings and click **Create user pool**.
+**Define your application**
++ **Application type:** choose **Single-page application (SPA)** — EDMS is a React SPA. (Traditional web app, Mobile, and Machine-to-machine are also available.)
++ **Name your application:** `edms-client`.
 
-![Figure 12. User pool created](/images/5-Workshop/5.3-Edms-infrastructure/userpool-created.png)
+**Configure options**
 
-> **Note:** The app client has **no secret**, so it can be used in browser-based flows. Do not enable a client secret for the public client.
+*Options for sign-in identifiers*
++ Select **Email** as the sign-in identifier (users sign in with email and password).
+
+*Self-registration*
++ **Enable self-registration:** keep this **off** if you want only admins to create users (recommended for a private enterprise tool). If you want to open sign-up to the public, turn it on.
++ **Required attributes for sign-up:** if you enable self-registration, select **Email** as a required attribute.
+
+*Add a return URL (optional)*
++ **Return URL:** for local development you can enter `http://localhost:3000`. In production, set it to your **Amplify** URL (e.g. `https://main.d3xxxx.amplifyapp.com`). Cognito redirects here after a successful sign-in.
+
+3. Click **Create user directory**.
+
+![Figure 12. User pool created](../../../images/5-Workshop/5.3-Edms-infrastructure/userpool-created.png)
+
+> **Note:** With the new Cognito console flow, the user pool and app client are created together. The **app client has no secret**, so it can be used in browser-based (SPA) flows.
 
 ### 5.3.4.3 Create groups (roles)
 
@@ -52,7 +53,7 @@ Cognito groups map directly to the application roles (`ADMIN` / `MANAGER` / `USE
 + `MANAGER`
 + `USER`
 
-![Figure 13. Groups](/images/5-Workshop/5.3-Edms-infrastructure/groups.png)
+![Figure 13. Groups](../../../images/5-Workshop/5.3-Edms-infrastructure/groups.png)
 
 4. Assign users to groups. A user in a group inherits that group's role in the application.
 
